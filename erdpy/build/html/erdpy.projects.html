@@ -1,0 +1,638 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>erdpy.projects package &#8212; erdpy  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="erdpy-projects-package">
+<h1>erdpy.projects package<a class="headerlink" href="#erdpy-projects-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-erdpy.projects.core">
+<span id="erdpy-projects-core-module"></span><h2>erdpy.projects.core module<a class="headerlink" href="#module-erdpy.projects.core" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="erdpy.projects.core.build_project">
+<code class="sig-prename descclassname">erdpy.projects.core.</code><code class="sig-name descname">build_project</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directory</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">options</span><span class="p">:</span> <span class="n">Dict<span class="p">[</span>str<span class="p">, </span>Any<span class="p">]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.core.build_project" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="erdpy.projects.core.clean_project">
+<code class="sig-prename descclassname">erdpy.projects.core.</code><code class="sig-name descname">clean_project</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directory</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.core.clean_project" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="erdpy.projects.core.get_projects_in_workspace">
+<code class="sig-prename descclassname">erdpy.projects.core.</code><code class="sig-name descname">get_projects_in_workspace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">workspace</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.core.get_projects_in_workspace" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="erdpy.projects.core.load_project">
+<code class="sig-prename descclassname">erdpy.projects.core.</code><code class="sig-name descname">load_project</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directory</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.core.load_project" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="erdpy.projects.core.run_tests">
+<code class="sig-prename descclassname">erdpy.projects.core.</code><code class="sig-name descname">run_tests</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">args</span><span class="p">:</span> <span class="n">Any</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.core.run_tests" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-erdpy.projects.project_base">
+<span id="erdpy-projects-project-base-module"></span><h2>erdpy.projects.project_base module<a class="headerlink" href="#module-erdpy.projects.project_base" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="erdpy.projects.project_base.Project">
+<em class="property">class </em><code class="sig-prename descclassname">erdpy.projects.project_base.</code><code class="sig-name descname">Project</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directory</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.project_base.Project" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="erdpy.projects.project_base.Project.build">
+<code class="sig-name descname">build</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">options</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.project_base.Project.build" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.project_base.Project.clean">
+<code class="sig-name descname">clean</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.project_base.Project.clean" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.project_base.Project.find_file_globally">
+<code class="sig-name descname">find_file_globally</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pattern</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.project_base.Project.find_file_globally" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.project_base.Project.find_file_in_folder">
+<code class="sig-name descname">find_file_in_folder</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">folder</span></em>, <em class="sig-param"><span class="n">pattern</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.project_base.Project.find_file_in_folder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.project_base.Project.find_file_in_output">
+<code class="sig-name descname">find_file_in_output</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pattern</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.project_base.Project.find_file_in_output" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.project_base.Project.get_bytecode">
+<code class="sig-name descname">get_bytecode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.project_base.Project.get_bytecode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.project_base.Project.get_dependencies">
+<code class="sig-name descname">get_dependencies</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; List<span class="p">[</span>str<span class="p">]</span><a class="headerlink" href="#erdpy.projects.project_base.Project.get_dependencies" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.project_base.Project.get_file_wasm">
+<code class="sig-name descname">get_file_wasm</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.project_base.Project.get_file_wasm" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.project_base.Project.perform_build">
+<code class="sig-name descname">perform_build</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#erdpy.projects.project_base.Project.perform_build" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.project_base.Project.run_tests">
+<code class="sig-name descname">run_tests</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tests_directory</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">wildcard</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">''</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.project_base.Project.run_tests" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-erdpy.projects.project_clang">
+<span id="erdpy-projects-project-clang-module"></span><h2>erdpy.projects.project_clang module<a class="headerlink" href="#module-erdpy.projects.project_clang" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="erdpy.projects.project_clang.ClangBuildConfiguration">
+<em class="property">class </em><code class="sig-prename descclassname">erdpy.projects.project_clang.</code><code class="sig-name descname">ClangBuildConfiguration</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">project</span></em>, <em class="sig-param"><span class="n">debug</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.project_clang.ClangBuildConfiguration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="erdpy.projects.project_clang.ProjectClang">
+<em class="property">class </em><code class="sig-prename descclassname">erdpy.projects.project_clang.</code><code class="sig-name descname">ProjectClang</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directory</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.project_clang.ProjectClang" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#erdpy.projects.project_base.Project" title="erdpy.projects.project_base.Project"><code class="xref py py-class docutils literal notranslate"><span class="pre">erdpy.projects.project_base.Project</span></code></a></p>
+<dl class="py method">
+<dt id="erdpy.projects.project_clang.ProjectClang.get_dependencies">
+<code class="sig-name descname">get_dependencies</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.project_clang.ProjectClang.get_dependencies" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.project_clang.ProjectClang.perform_build">
+<code class="sig-name descname">perform_build</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.project_clang.ProjectClang.perform_build" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-erdpy.projects.project_cpp">
+<span id="erdpy-projects-project-cpp-module"></span><h2>erdpy.projects.project_cpp module<a class="headerlink" href="#module-erdpy.projects.project_cpp" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="erdpy.projects.project_cpp.CppBuildConfiguration">
+<em class="property">class </em><code class="sig-prename descclassname">erdpy.projects.project_cpp.</code><code class="sig-name descname">CppBuildConfiguration</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">project</span></em>, <em class="sig-param"><span class="n">debug</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.project_cpp.CppBuildConfiguration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="erdpy.projects.project_cpp.ProjectCpp">
+<em class="property">class </em><code class="sig-prename descclassname">erdpy.projects.project_cpp.</code><code class="sig-name descname">ProjectCpp</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directory</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.project_cpp.ProjectCpp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#erdpy.projects.project_base.Project" title="erdpy.projects.project_base.Project"><code class="xref py py-class docutils literal notranslate"><span class="pre">erdpy.projects.project_base.Project</span></code></a></p>
+<dl class="py method">
+<dt id="erdpy.projects.project_cpp.ProjectCpp.get_dependencies">
+<code class="sig-name descname">get_dependencies</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.project_cpp.ProjectCpp.get_dependencies" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.project_cpp.ProjectCpp.perform_build">
+<code class="sig-name descname">perform_build</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.project_cpp.ProjectCpp.perform_build" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-erdpy.projects.project_rust">
+<span id="erdpy-projects-project-rust-module"></span><h2>erdpy.projects.project_rust module<a class="headerlink" href="#module-erdpy.projects.project_rust" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="erdpy.projects.project_rust.CargoFile">
+<em class="property">class </em><code class="sig-prename descclassname">erdpy.projects.project_rust.</code><code class="sig-name descname">CargoFile</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.project_rust.CargoFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="erdpy.projects.project_rust.CargoFile.authors">
+<em class="property">property </em><code class="sig-name descname">authors</code><a class="headerlink" href="#erdpy.projects.project_rust.CargoFile.authors" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.project_rust.CargoFile.edition">
+<em class="property">property </em><code class="sig-name descname">edition</code><a class="headerlink" href="#erdpy.projects.project_rust.CargoFile.edition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.project_rust.CargoFile.get_dependencies">
+<code class="sig-name descname">get_dependencies</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; MutableMapping<span class="p">[</span>str<span class="p">, </span>Any<span class="p">]</span><a class="headerlink" href="#erdpy.projects.project_rust.CargoFile.get_dependencies" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.project_rust.CargoFile.get_dependency">
+<code class="sig-name descname">get_dependency</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span> &#x2192; MutableMapping<span class="p">[</span>str<span class="p">, </span>Any<span class="p">]</span><a class="headerlink" href="#erdpy.projects.project_rust.CargoFile.get_dependency" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.project_rust.CargoFile.package_name">
+<em class="property">property </em><code class="sig-name descname">package_name</code><a class="headerlink" href="#erdpy.projects.project_rust.CargoFile.package_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.project_rust.CargoFile.save">
+<code class="sig-name descname">save</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.project_rust.CargoFile.save" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.project_rust.CargoFile.version">
+<em class="property">property </em><code class="sig-name descname">version</code><a class="headerlink" href="#erdpy.projects.project_rust.CargoFile.version" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="erdpy.projects.project_rust.ProjectRust">
+<em class="property">class </em><code class="sig-prename descclassname">erdpy.projects.project_rust.</code><code class="sig-name descname">ProjectRust</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directory</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.project_rust.ProjectRust" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#erdpy.projects.project_base.Project" title="erdpy.projects.project_base.Project"><code class="xref py py-class docutils literal notranslate"><span class="pre">erdpy.projects.project_base.Project</span></code></a></p>
+<dl class="py method">
+<dt id="erdpy.projects.project_rust.ProjectRust.clean">
+<code class="sig-name descname">clean</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.project_rust.ProjectRust.clean" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.project_rust.ProjectRust.get_dependencies">
+<code class="sig-name descname">get_dependencies</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.project_rust.ProjectRust.get_dependencies" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.project_rust.ProjectRust.perform_build">
+<code class="sig-name descname">perform_build</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.project_rust.ProjectRust.perform_build" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.project_rust.ProjectRust.run_cargo">
+<code class="sig-name descname">run_cargo</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.project_rust.ProjectRust.run_cargo" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-erdpy.projects.project_sol">
+<span id="erdpy-projects-project-sol-module"></span><h2>erdpy.projects.project_sol module<a class="headerlink" href="#module-erdpy.projects.project_sol" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="erdpy.projects.project_sol.ProjectSol">
+<em class="property">class </em><code class="sig-prename descclassname">erdpy.projects.project_sol.</code><code class="sig-name descname">ProjectSol</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directory</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.project_sol.ProjectSol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#erdpy.projects.project_base.Project" title="erdpy.projects.project_base.Project"><code class="xref py py-class docutils literal notranslate"><span class="pre">erdpy.projects.project_base.Project</span></code></a></p>
+<dl class="py method">
+<dt id="erdpy.projects.project_sol.ProjectSol.get_dependencies">
+<code class="sig-name descname">get_dependencies</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.project_sol.ProjectSol.get_dependencies" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.project_sol.ProjectSol.perform_build">
+<code class="sig-name descname">perform_build</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.project_sol.ProjectSol.perform_build" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference external" href="https://github.com/second-state/SOLL/blob/master/utils/ll2ewasm_sol">https://github.com/second-state/SOLL/blob/master/utils/ll2ewasm_sol</a></p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-erdpy.projects.shared">
+<span id="erdpy-projects-shared-module"></span><h2>erdpy.projects.shared module<a class="headerlink" href="#module-erdpy.projects.shared" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="erdpy.projects.shared.is_source_clang">
+<code class="sig-prename descclassname">erdpy.projects.shared.</code><code class="sig-name descname">is_source_clang</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directory</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.shared.is_source_clang" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="erdpy.projects.shared.is_source_cpp">
+<code class="sig-prename descclassname">erdpy.projects.shared.</code><code class="sig-name descname">is_source_cpp</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directory</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.shared.is_source_cpp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="erdpy.projects.shared.is_source_rust">
+<code class="sig-prename descclassname">erdpy.projects.shared.</code><code class="sig-name descname">is_source_rust</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directory</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.shared.is_source_rust" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="erdpy.projects.shared.is_source_sol">
+<code class="sig-prename descclassname">erdpy.projects.shared.</code><code class="sig-name descname">is_source_sol</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directory</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.shared.is_source_sol" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-erdpy.projects.templates">
+<span id="erdpy-projects-templates-module"></span><h2>erdpy.projects.templates module<a class="headerlink" href="#module-erdpy.projects.templates" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="erdpy.projects.templates.Template">
+<em class="property">class </em><code class="sig-prename descclassname">erdpy.projects.templates.</code><code class="sig-name descname">Template</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directory</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.templates.Template" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="erdpy.projects.templates.Template.apply">
+<code class="sig-name descname">apply</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">template_name</span></em>, <em class="sig-param"><span class="n">project_name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.templates.Template.apply" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="erdpy.projects.templates.TemplateClang">
+<em class="property">class </em><code class="sig-prename descclassname">erdpy.projects.templates.</code><code class="sig-name descname">TemplateClang</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directory</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.templates.TemplateClang" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#erdpy.projects.templates.Template" title="erdpy.projects.templates.Template"><code class="xref py py-class docutils literal notranslate"><span class="pre">erdpy.projects.templates.Template</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="erdpy.projects.templates.TemplateRust">
+<em class="property">class </em><code class="sig-prename descclassname">erdpy.projects.templates.</code><code class="sig-name descname">TemplateRust</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directory</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.templates.TemplateRust" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#erdpy.projects.templates.Template" title="erdpy.projects.templates.Template"><code class="xref py py-class docutils literal notranslate"><span class="pre">erdpy.projects.templates.Template</span></code></a></p>
+<dl class="py attribute">
+<dt id="erdpy.projects.templates.TemplateRust.CARGO_TOML">
+<code class="sig-name descname">CARGO_TOML</code><em class="property"> = 'Cargo.toml'</em><a class="headerlink" href="#erdpy.projects.templates.TemplateRust.CARGO_TOML" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="erdpy.projects.templates.TemplateSol">
+<em class="property">class </em><code class="sig-prename descclassname">erdpy.projects.templates.</code><code class="sig-name descname">TemplateSol</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directory</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.templates.TemplateSol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#erdpy.projects.templates.Template" title="erdpy.projects.templates.Template"><code class="xref py py-class docutils literal notranslate"><span class="pre">erdpy.projects.templates.Template</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="erdpy.projects.templates.TemplateSummary">
+<em class="property">class </em><code class="sig-prename descclassname">erdpy.projects.templates.</code><code class="sig-name descname">TemplateSummary</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">repository</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.templates.TemplateSummary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="erdpy.projects.templates.create_from_template">
+<code class="sig-prename descclassname">erdpy.projects.templates.</code><code class="sig-name descname">create_from_template</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">template_name</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">directory</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.templates.create_from_template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="erdpy.projects.templates.list_project_templates">
+<code class="sig-prename descclassname">erdpy.projects.templates.</code><code class="sig-name descname">list_project_templates</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.templates.list_project_templates" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-erdpy.projects.templates_config">
+<span id="erdpy-projects-templates-config-module"></span><h2>erdpy.projects.templates_config module<a class="headerlink" href="#module-erdpy.projects.templates_config" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="erdpy.projects.templates_config.get_templates_repositories">
+<code class="sig-prename descclassname">erdpy.projects.templates_config.</code><code class="sig-name descname">get_templates_repositories</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.templates_config.get_templates_repositories" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-erdpy.projects.templates_repository">
+<span id="erdpy-projects-templates-repository-module"></span><h2>erdpy.projects.templates_repository module<a class="headerlink" href="#module-erdpy.projects.templates_repository" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="erdpy.projects.templates_repository.TemplatesRepository">
+<em class="property">class </em><code class="sig-prename descclassname">erdpy.projects.templates_repository.</code><code class="sig-name descname">TemplatesRepository</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">key</span></em>, <em class="sig-param"><span class="n">url</span></em>, <em class="sig-param"><span class="n">github</span></em>, <em class="sig-param"><span class="n">relative_path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.templates_repository.TemplatesRepository" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="erdpy.projects.templates_repository.TemplatesRepository.copy_template">
+<code class="sig-name descname">copy_template</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">template</span></em>, <em class="sig-param"><span class="n">destination_path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.templates_repository.TemplatesRepository.copy_template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.templates_repository.TemplatesRepository.download">
+<code class="sig-name descname">download</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.templates_repository.TemplatesRepository.download" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.templates_repository.TemplatesRepository.get_folder">
+<code class="sig-name descname">get_folder</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.templates_repository.TemplatesRepository.get_folder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.templates_repository.TemplatesRepository.get_language">
+<code class="sig-name descname">get_language</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">template</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.templates_repository.TemplatesRepository.get_language" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.templates_repository.TemplatesRepository.get_metadata_file">
+<code class="sig-name descname">get_metadata_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">template_folder</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.templates_repository.TemplatesRepository.get_metadata_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.templates_repository.TemplatesRepository.get_template_folder">
+<code class="sig-name descname">get_template_folder</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">template</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.templates_repository.TemplatesRepository.get_template_folder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.templates_repository.TemplatesRepository.get_templates">
+<code class="sig-name descname">get_templates</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.templates_repository.TemplatesRepository.get_templates" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.templates_repository.TemplatesRepository.has_template">
+<code class="sig-name descname">has_template</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">template</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.templates_repository.TemplatesRepository.has_template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.templates_repository.TemplatesRepository.is_template">
+<code class="sig-name descname">is_template</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">subfolder</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.templates_repository.TemplatesRepository.is_template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-erdpy.projects">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-erdpy.projects" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="erdpy.projects.Project">
+<em class="property">class </em><code class="sig-prename descclassname">erdpy.projects.</code><code class="sig-name descname">Project</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directory</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.Project" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="erdpy.projects.Project.build">
+<code class="sig-name descname">build</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">options</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.Project.build" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.Project.clean">
+<code class="sig-name descname">clean</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.Project.clean" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.Project.find_file_globally">
+<code class="sig-name descname">find_file_globally</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pattern</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.Project.find_file_globally" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.Project.find_file_in_folder">
+<code class="sig-name descname">find_file_in_folder</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">folder</span></em>, <em class="sig-param"><span class="n">pattern</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.Project.find_file_in_folder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.Project.find_file_in_output">
+<code class="sig-name descname">find_file_in_output</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pattern</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.Project.find_file_in_output" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.Project.get_bytecode">
+<code class="sig-name descname">get_bytecode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.Project.get_bytecode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.Project.get_dependencies">
+<code class="sig-name descname">get_dependencies</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; List<span class="p">[</span>str<span class="p">]</span><a class="headerlink" href="#erdpy.projects.Project.get_dependencies" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.Project.get_file_wasm">
+<code class="sig-name descname">get_file_wasm</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.Project.get_file_wasm" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.Project.perform_build">
+<code class="sig-name descname">perform_build</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#erdpy.projects.Project.perform_build" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.Project.run_tests">
+<code class="sig-name descname">run_tests</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tests_directory</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">wildcard</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">''</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.Project.run_tests" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="erdpy.projects.ProjectClang">
+<em class="property">class </em><code class="sig-prename descclassname">erdpy.projects.</code><code class="sig-name descname">ProjectClang</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directory</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.ProjectClang" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#erdpy.projects.project_base.Project" title="erdpy.projects.project_base.Project"><code class="xref py py-class docutils literal notranslate"><span class="pre">erdpy.projects.project_base.Project</span></code></a></p>
+<dl class="py method">
+<dt id="erdpy.projects.ProjectClang.get_dependencies">
+<code class="sig-name descname">get_dependencies</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.ProjectClang.get_dependencies" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.ProjectClang.perform_build">
+<code class="sig-name descname">perform_build</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.ProjectClang.perform_build" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="erdpy.projects.ProjectCpp">
+<em class="property">class </em><code class="sig-prename descclassname">erdpy.projects.</code><code class="sig-name descname">ProjectCpp</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directory</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.ProjectCpp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#erdpy.projects.project_base.Project" title="erdpy.projects.project_base.Project"><code class="xref py py-class docutils literal notranslate"><span class="pre">erdpy.projects.project_base.Project</span></code></a></p>
+<dl class="py method">
+<dt id="erdpy.projects.ProjectCpp.get_dependencies">
+<code class="sig-name descname">get_dependencies</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.ProjectCpp.get_dependencies" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.ProjectCpp.perform_build">
+<code class="sig-name descname">perform_build</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.ProjectCpp.perform_build" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="erdpy.projects.ProjectRust">
+<em class="property">class </em><code class="sig-prename descclassname">erdpy.projects.</code><code class="sig-name descname">ProjectRust</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directory</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.ProjectRust" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#erdpy.projects.project_base.Project" title="erdpy.projects.project_base.Project"><code class="xref py py-class docutils literal notranslate"><span class="pre">erdpy.projects.project_base.Project</span></code></a></p>
+<dl class="py method">
+<dt id="erdpy.projects.ProjectRust.clean">
+<code class="sig-name descname">clean</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.ProjectRust.clean" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.ProjectRust.get_dependencies">
+<code class="sig-name descname">get_dependencies</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.ProjectRust.get_dependencies" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.ProjectRust.perform_build">
+<code class="sig-name descname">perform_build</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.ProjectRust.perform_build" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.ProjectRust.run_cargo">
+<code class="sig-name descname">run_cargo</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.ProjectRust.run_cargo" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="erdpy.projects.ProjectSol">
+<em class="property">class </em><code class="sig-prename descclassname">erdpy.projects.</code><code class="sig-name descname">ProjectSol</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directory</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.ProjectSol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#erdpy.projects.project_base.Project" title="erdpy.projects.project_base.Project"><code class="xref py py-class docutils literal notranslate"><span class="pre">erdpy.projects.project_base.Project</span></code></a></p>
+<dl class="py method">
+<dt id="erdpy.projects.ProjectSol.get_dependencies">
+<code class="sig-name descname">get_dependencies</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.ProjectSol.get_dependencies" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.projects.ProjectSol.perform_build">
+<code class="sig-name descname">perform_build</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.ProjectSol.perform_build" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference external" href="https://github.com/second-state/SOLL/blob/master/utils/ll2ewasm_sol">https://github.com/second-state/SOLL/blob/master/utils/ll2ewasm_sol</a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="erdpy.projects.build_project">
+<code class="sig-prename descclassname">erdpy.projects.</code><code class="sig-name descname">build_project</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directory</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">options</span><span class="p">:</span> <span class="n">Dict<span class="p">[</span>str<span class="p">, </span>Any<span class="p">]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.build_project" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="erdpy.projects.clean_project">
+<code class="sig-prename descclassname">erdpy.projects.</code><code class="sig-name descname">clean_project</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directory</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.clean_project" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="erdpy.projects.create_from_template">
+<code class="sig-prename descclassname">erdpy.projects.</code><code class="sig-name descname">create_from_template</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">template_name</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">directory</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.create_from_template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="erdpy.projects.get_projects_in_workspace">
+<code class="sig-prename descclassname">erdpy.projects.</code><code class="sig-name descname">get_projects_in_workspace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">workspace</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.get_projects_in_workspace" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="erdpy.projects.list_project_templates">
+<code class="sig-prename descclassname">erdpy.projects.</code><code class="sig-name descname">list_project_templates</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.list_project_templates" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="erdpy.projects.load_project">
+<code class="sig-prename descclassname">erdpy.projects.</code><code class="sig-name descname">load_project</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directory</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.load_project" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="erdpy.projects.run_tests">
+<code class="sig-prename descclassname">erdpy.projects.</code><code class="sig-name descname">run_tests</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">args</span><span class="p">:</span> <span class="n">Any</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.projects.run_tests" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">erdpy</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Elrond Network.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/erdpy.projects.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

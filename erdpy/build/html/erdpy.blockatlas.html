@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>erdpy.blockatlas package &#8212; erdpy  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="erdpy-blockatlas-package">
+<h1>erdpy.blockatlas package<a class="headerlink" href="#erdpy-blockatlas-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-erdpy.blockatlas.core">
+<span id="erdpy-blockatlas-core-module"></span><h2>erdpy.blockatlas.core module<a class="headerlink" href="#module-erdpy.blockatlas.core" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="erdpy.blockatlas.core.BlockAtlas">
+<em class="property">class </em><code class="sig-prename descclassname">erdpy.blockatlas.core.</code><code class="sig-name descname">BlockAtlas</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">url</span></em>, <em class="sig-param"><span class="n">coin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.blockatlas.core.BlockAtlas" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="erdpy.blockatlas.core.BlockAtlas.get_block_by_number">
+<code class="sig-name descname">get_block_by_number</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">num</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.blockatlas.core.BlockAtlas.get_block_by_number" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.blockatlas.core.BlockAtlas.get_current_block_number">
+<code class="sig-name descname">get_current_block_number</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.blockatlas.core.BlockAtlas.get_current_block_number" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.blockatlas.core.BlockAtlas.get_txs_by_address">
+<code class="sig-name descname">get_txs_by_address</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">address</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.blockatlas.core.BlockAtlas.get_txs_by_address" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-erdpy.blockatlas.http_facade">
+<span id="erdpy-blockatlas-http-facade-module"></span><h2>erdpy.blockatlas.http_facade module<a class="headerlink" href="#module-erdpy.blockatlas.http_facade" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="erdpy.blockatlas.http_facade.do_get">
+<code class="sig-prename descclassname">erdpy.blockatlas.http_facade.</code><code class="sig-name descname">do_get</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">url</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.blockatlas.http_facade.do_get" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="erdpy.blockatlas.http_facade.do_post">
+<code class="sig-prename descclassname">erdpy.blockatlas.http_facade.</code><code class="sig-name descname">do_post</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">url</span></em>, <em class="sig-param"><span class="n">payload</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.blockatlas.http_facade.do_post" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-erdpy.blockatlas">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-erdpy.blockatlas" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="erdpy.blockatlas.BlockAtlas">
+<em class="property">class </em><code class="sig-prename descclassname">erdpy.blockatlas.</code><code class="sig-name descname">BlockAtlas</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">url</span></em>, <em class="sig-param"><span class="n">coin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.blockatlas.BlockAtlas" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="erdpy.blockatlas.BlockAtlas.get_block_by_number">
+<code class="sig-name descname">get_block_by_number</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">num</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.blockatlas.BlockAtlas.get_block_by_number" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.blockatlas.BlockAtlas.get_current_block_number">
+<code class="sig-name descname">get_current_block_number</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.blockatlas.BlockAtlas.get_current_block_number" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="erdpy.blockatlas.BlockAtlas.get_txs_by_address">
+<code class="sig-name descname">get_txs_by_address</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">address</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.blockatlas.BlockAtlas.get_txs_by_address" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">erdpy</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Elrond Network.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/erdpy.blockatlas.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
