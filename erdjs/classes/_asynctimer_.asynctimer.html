@@ -90,14 +90,17 @@
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_asynctimer_.asynctimer.html#rejecttimeoutpromise" class="tsd-kind-icon">reject<wbr>Timeout<wbr>Promise</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_asynctimer_.asynctimer.html#timeout" class="tsd-kind-icon">timeout</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_asynctimer_.asynctimer.html#correlationtag" class="tsd-kind-icon">correlation<wbr>Tag</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_asynctimer_.asynctimer.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_asynctimer_.asynctimer.html#rejectionfunc" class="tsd-kind-icon">rejection<wbr>Func</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_asynctimer_.asynctimer.html#timeouthandle" class="tsd-kind-icon">timeout<wbr>Handle</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_asynctimer_.asynctimer.html#abort" class="tsd-kind-icon">abort</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_asynctimer_.asynctimer.html#isstopped" class="tsd-kind-icon">is<wbr>Stopped</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_asynctimer_.asynctimer.html#start" class="tsd-kind-icon">start</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_asynctimer_.asynctimer.html#stop" class="tsd-kind-icon">stop</a></li>
 							</ul>
@@ -111,15 +114,21 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Async<wbr>Timer<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_asynctimer_.asynctimer.html" class="tsd-signature-type">AsyncTimer</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Async<wbr>Timer<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_asynctimer_.asynctimer.html" class="tsd-signature-type">AsyncTimer</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/67cc3da/erdjs/src/asyncTimer.ts#L7">src/asyncTimer.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/asyncTimer.ts#L11">src/asyncTimer.ts:11</a></li>
 								</ul>
 							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_asynctimer_.asynctimer.html" class="tsd-signature-type">AsyncTimer</a></h4>
 						</li>
 					</ul>
@@ -128,22 +137,42 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="rejecttimeoutpromise" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> reject<wbr>Timeout<wbr>Promise</h3>
-					<div class="tsd-signature tsd-kind-icon">reject<wbr>Timeout<wbr>Promise<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> = null</span></div>
+					<a name="correlationtag" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> correlation<wbr>Tag</h3>
+					<div class="tsd-signature tsd-kind-icon">correlation<wbr>Tag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/67cc3da/erdjs/src/asyncTimer.ts#L7">src/asyncTimer.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/asyncTimer.ts#L11">src/asyncTimer.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="timeout" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> timeout</h3>
-					<div class="tsd-signature tsd-kind-icon">timeout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> = null</span></div>
+					<a name="name" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/67cc3da/erdjs/src/asyncTimer.ts#L6">src/asyncTimer.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/asyncTimer.ts#L8">src/asyncTimer.ts:8</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="rejectionfunc" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> rejection<wbr>Func</h3>
+					<div class="tsd-signature tsd-kind-icon">rejection<wbr>Func<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> = null</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/asyncTimer.ts#L10">src/asyncTimer.ts:10</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="timeouthandle" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> timeout<wbr>Handle</h3>
+					<div class="tsd-signature tsd-kind-icon">timeout<wbr>Handle<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> = null</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/asyncTimer.ts#L9">src/asyncTimer.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -160,10 +189,37 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/67cc3da/erdjs/src/asyncTimer.ts#L30">src/asyncTimer.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/asyncTimer.ts#L46">src/asyncTimer.ts:46</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Aborts the timer: rejects the promise (if any) and stops the timer.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isstopped" class="tsd-anchor"></a>
+					<h3>is<wbr>Stopped</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Stopped<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/asyncTimer.ts#L76">src/asyncTimer.ts:76</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns whether the timer is stopped.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -177,13 +233,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/67cc3da/erdjs/src/asyncTimer.ts#L12">src/asyncTimer.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/asyncTimer.ts#L22">src/asyncTimer.ts:22</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Starts the timer.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>timeout: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The time (in milliseconds) to wait until resolving the promise.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -200,9 +264,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/67cc3da/erdjs/src/asyncTimer.ts#L39">src/asyncTimer.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/asyncTimer.ts#L60">src/asyncTimer.ts:60</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Stops the timer.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -231,13 +300,22 @@
 								<a href="_asynctimer_.asynctimer.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_asynctimer_.asynctimer.html#rejecttimeoutpromise" class="tsd-kind-icon">reject<wbr>Timeout<wbr>Promise</a>
+								<a href="_asynctimer_.asynctimer.html#correlationtag" class="tsd-kind-icon">correlation<wbr>Tag</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_asynctimer_.asynctimer.html#timeout" class="tsd-kind-icon">timeout</a>
+								<a href="_asynctimer_.asynctimer.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_asynctimer_.asynctimer.html#rejectionfunc" class="tsd-kind-icon">rejection<wbr>Func</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_asynctimer_.asynctimer.html#timeouthandle" class="tsd-kind-icon">timeout<wbr>Handle</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_asynctimer_.asynctimer.html#abort" class="tsd-kind-icon">abort</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_asynctimer_.asynctimer.html#isstopped" class="tsd-kind-icon">is<wbr>Stopped</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_asynctimer_.asynctimer.html#start" class="tsd-kind-icon">start</a>
@@ -260,6 +338,7 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
@@ -269,6 +348,10 @@
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>

@@ -69,6 +69,13 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>TransactionWatcher allows one to continuously watch (monitor), by means of polling, the status of a given transaction.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -87,19 +94,22 @@
 								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_transactionwatcher_.transactionwatcher.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_transactionwatcher_.transactionwatcher.html#hash" class="tsd-kind-icon">hash</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_transactionwatcher_.transactionwatcher.html#pollinginterval" class="tsd-kind-icon">polling<wbr>Interval</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_transactionwatcher_.transactionwatcher.html#provider" class="tsd-kind-icon">provider</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_transactionwatcher_.transactionwatcher.html#stop" class="tsd-kind-icon">stop</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_transactionwatcher_.transactionwatcher.html#txhash" class="tsd-kind-icon">tx<wbr>Hash</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_transactionwatcher_.transactionwatcher.html#timeout" class="tsd-kind-icon">timeout</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_transactionwatcher_.transactionwatcher.html#defaultpollinginterval" class="tsd-kind-icon">Default<wbr>Polling<wbr>Interval</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_transactionwatcher_.transactionwatcher.html#defaulttimeout" class="tsd-kind-icon">Default<wbr>Timeout</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_transactionwatcher_.transactionwatcher.html#awaitexecuted" class="tsd-kind-icon">await<wbr>Executed</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_transactionwatcher_.transactionwatcher.html#awaitreceived" class="tsd-kind-icon">await<wbr>Received</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_transactionwatcher_.transactionwatcher.html#awaitpending" class="tsd-kind-icon">await<wbr>Pending</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_transactionwatcher_.transactionwatcher.html#awaitstatus" class="tsd-kind-icon">await<wbr>Status</a></li>
 							</ul>
 						</section>
@@ -112,22 +122,50 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Transaction<wbr>Watcher<span class="tsd-signature-symbol">(</span>hash<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, provider<span class="tsd-signature-symbol">: </span><a href="../interfaces/_interface_.provider.html" class="tsd-signature-type">Provider</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_transactionwatcher_.transactionwatcher.html" class="tsd-signature-type">TransactionWatcher</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Transaction<wbr>Watcher<span class="tsd-signature-symbol">(</span>hash<span class="tsd-signature-symbol">: </span><a href="_transaction_.transactionhash.html" class="tsd-signature-type">TransactionHash</a>, provider<span class="tsd-signature-symbol">: </span><a href="../interfaces/_interface_.iprovider.html" class="tsd-signature-type">IProvider</a>, pollingInterval<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, timeout<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_transactionwatcher_.transactionwatcher.html" class="tsd-signature-type">TransactionWatcher</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/67cc3da/erdjs/src/transactionWatcher.ts#L8">src/transactionWatcher.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/transactionWatcher.ts#L16">src/transactionWatcher.ts:16</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>hash: <span class="tsd-signature-type">string</span></h5>
+									<h5>hash: <a href="_transaction_.transactionhash.html" class="tsd-signature-type">TransactionHash</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The hash of the transaction to watch</p>
+										</div>
+									</div>
 								</li>
 								<li>
-									<h5>provider: <a href="../interfaces/_interface_.provider.html" class="tsd-signature-type">Provider</a></h5>
+									<h5>provider: <a href="../interfaces/_interface_.iprovider.html" class="tsd-signature-type">IProvider</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The provider to query the status from</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> pollingInterval: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = TransactionWatcher.DefaultPollingInterval</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The polling interval, in milliseconds</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> timeout: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = TransactionWatcher.DefaultTimeout</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The timeout, in milliseconds</p>
+										</div>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_transactionwatcher_.transactionwatcher.html" class="tsd-signature-type">TransactionWatcher</a></h4>
@@ -135,35 +173,65 @@
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="hash" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> hash</h3>
+					<div class="tsd-signature tsd-kind-icon">hash<span class="tsd-signature-symbol">:</span> <a href="_transaction_.transactionhash.html" class="tsd-signature-type">TransactionHash</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/transactionWatcher.ts#L13">src/transactionWatcher.ts:13</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="pollinginterval" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> polling<wbr>Interval</h3>
+					<div class="tsd-signature tsd-kind-icon">polling<wbr>Interval<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/transactionWatcher.ts#L15">src/transactionWatcher.ts:15</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="provider" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> provider</h3>
-					<div class="tsd-signature tsd-kind-icon">provider<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_interface_.provider.html" class="tsd-signature-type">Provider</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> = null</span></div>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> provider</h3>
+					<div class="tsd-signature tsd-kind-icon">provider<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_interface_.iprovider.html" class="tsd-signature-type">IProvider</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/67cc3da/erdjs/src/transactionWatcher.ts#L7">src/transactionWatcher.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/transactionWatcher.ts#L14">src/transactionWatcher.ts:14</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="stop" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> stop</h3>
-					<div class="tsd-signature tsd-kind-icon">stop<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
+					<a name="timeout" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> timeout</h3>
+					<div class="tsd-signature tsd-kind-icon">timeout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/67cc3da/erdjs/src/transactionWatcher.ts#L8">src/transactionWatcher.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/transactionWatcher.ts#L16">src/transactionWatcher.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="txhash" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> tx<wbr>Hash</h3>
-					<div class="tsd-signature tsd-kind-icon">tx<wbr>Hash<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;&quot;</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="defaultpollinginterval" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Default<wbr>Polling<wbr>Interval</h3>
+					<div class="tsd-signature tsd-kind-icon">Default<wbr>Polling<wbr>Interval<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 5000</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/67cc3da/erdjs/src/transactionWatcher.ts#L6">src/transactionWatcher.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/transactionWatcher.ts#L10">src/transactionWatcher.ts:10</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="defaulttimeout" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Default<wbr>Timeout</h3>
+					<div class="tsd-signature tsd-kind-icon">Default<wbr>Timeout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = TransactionWatcher.DefaultPollingInterval * 10</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/transactionWatcher.ts#L11">src/transactionWatcher.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -174,50 +242,42 @@
 					<a name="awaitexecuted" class="tsd-anchor"></a>
 					<h3>await<wbr>Executed</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">await<wbr>Executed<span class="tsd-signature-symbol">(</span>period<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, timeout<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">await<wbr>Executed<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/67cc3da/erdjs/src/transactionWatcher.ts#L20">src/transactionWatcher.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/transactionWatcher.ts#L47">src/transactionWatcher.ts:47</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>period: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5>timeout: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Waits until the transaction reaches the &quot;executed&quot; status.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="awaitreceived" class="tsd-anchor"></a>
-					<h3>await<wbr>Received</h3>
+					<a name="awaitpending" class="tsd-anchor"></a>
+					<h3>await<wbr>Pending</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">await<wbr>Received<span class="tsd-signature-symbol">(</span>period<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, timeout<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">await<wbr>Pending<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/67cc3da/erdjs/src/transactionWatcher.ts#L15">src/transactionWatcher.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/transactionWatcher.ts#L40">src/transactionWatcher.ts:40</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>period: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5>timeout: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Waits until the transaction reaches the &quot;pending&quot; status.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -226,25 +286,45 @@
 					<a name="awaitstatus" class="tsd-anchor"></a>
 					<h3>await<wbr>Status</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">await<wbr>Status<span class="tsd-signature-symbol">(</span>awaited_status<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, period<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, timeout<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">await<wbr>Status<span class="tsd-signature-symbol">(</span>isAwaitedStatus<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>status<span class="tsd-signature-symbol">: </span><a href="_transaction_.transactionstatus.html" class="tsd-signature-type">TransactionStatus</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/67cc3da/erdjs/src/transactionWatcher.ts#L25">src/transactionWatcher.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/transactionWatcher.ts#L55">src/transactionWatcher.ts:55</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Waits until the predicate over the transaction status evaluates to &quot;true&quot;.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>awaited_status: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>period: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5>timeout: <span class="tsd-signature-type">number</span></h5>
+									<h5>isAwaitedStatus: <span class="tsd-signature-symbol">(</span>status<span class="tsd-signature-symbol">: </span><a href="_transaction_.transactionstatus.html" class="tsd-signature-type">TransactionStatus</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A predicate over the status</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>status<span class="tsd-signature-symbol">: </span><a href="_transaction_.transactionstatus.html" class="tsd-signature-type">TransactionStatus</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>status: <a href="_transaction_.transactionstatus.html" class="tsd-signature-type">TransactionStatus</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -275,19 +355,28 @@
 								<a href="_transactionwatcher_.transactionwatcher.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_transactionwatcher_.transactionwatcher.html#hash" class="tsd-kind-icon">hash</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_transactionwatcher_.transactionwatcher.html#pollinginterval" class="tsd-kind-icon">polling<wbr>Interval</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_transactionwatcher_.transactionwatcher.html#provider" class="tsd-kind-icon">provider</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_transactionwatcher_.transactionwatcher.html#stop" class="tsd-kind-icon">stop</a>
+								<a href="_transactionwatcher_.transactionwatcher.html#timeout" class="tsd-kind-icon">timeout</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_transactionwatcher_.transactionwatcher.html#txhash" class="tsd-kind-icon">tx<wbr>Hash</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="_transactionwatcher_.transactionwatcher.html#defaultpollinginterval" class="tsd-kind-icon">Default<wbr>Polling<wbr>Interval</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="_transactionwatcher_.transactionwatcher.html#defaulttimeout" class="tsd-kind-icon">Default<wbr>Timeout</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_transactionwatcher_.transactionwatcher.html#awaitexecuted" class="tsd-kind-icon">await<wbr>Executed</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_transactionwatcher_.transactionwatcher.html#awaitreceived" class="tsd-kind-icon">await<wbr>Received</a>
+								<a href="_transactionwatcher_.transactionwatcher.html#awaitpending" class="tsd-kind-icon">await<wbr>Pending</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_transactionwatcher_.transactionwatcher.html#awaitstatus" class="tsd-kind-icon">await<wbr>Status</a>
@@ -307,6 +396,7 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
@@ -316,9 +406,16 @@
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
 			</ul>
 		</div>
 	</div>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Signable | @elrondnetwork/erdjs</title>
+	<title>Disposable | @elrondnetwork/erdjs</title>
 	<meta name="description" content="Documentation for @elrondnetwork/erdjs">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_interface_.html">&quot;interface&quot;</a>
+					<a href="../modules/_events_.html">&quot;events&quot;</a>
 				</li>
 				<li>
-					<a href="_interface_.signable.html">Signable</a>
+					<a href="_events_.disposable.html">Disposable</a>
 				</li>
 			</ul>
-			<h1>Interface Signable</h1>
+			<h1>Interface Disposable</h1>
 		</div>
 	</div>
 </header>
@@ -73,16 +73,8 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Signable</span>
+						<span class="target">Disposable</span>
 					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implemented by</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../classes/_smartcontracts_sccall_.smartcontractcall.html" class="tsd-signature-type">SmartContractCall</a></li>
-					<li><a href="../classes/_smartcontracts_scdeploy_.smartcontractdeploy.html" class="tsd-signature-type">SmartContractDeploy</a></li>
-					<li><a href="../classes/_transaction_.transaction.html" class="tsd-signature-type">Transaction</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -92,8 +84,7 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_interface_.signable.html#applysignature" class="tsd-kind-icon">apply<wbr>Signature</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_interface_.signable.html#serializeforsigning" class="tsd-kind-icon">serialize<wbr>For<wbr>Signing</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_events_.disposable.html#dispose" class="tsd-kind-icon">dispose</a></li>
 							</ul>
 						</section>
 					</div>
@@ -102,51 +93,19 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="applysignature" class="tsd-anchor"></a>
-					<h3>apply<wbr>Signature</h3>
+					<a name="dispose" class="tsd-anchor"></a>
+					<h3>dispose</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">apply<wbr>Signature<span class="tsd-signature-symbol">(</span>signature<span class="tsd-signature-symbol">: </span><a href="../classes/_signature_.signature.html" class="tsd-signature-type">Signature</a>, signedBy<span class="tsd-signature-symbol">: </span><a href="../classes/_address_.address.html" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/67cc3da/erdjs/src/interface.ts#L32">src/interface.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/events.ts#L6">src/events.ts:6</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>signature: <a href="../classes/_signature_.signature.html" class="tsd-signature-type">Signature</a></h5>
-								</li>
-								<li>
-									<h5>signedBy: <a href="../classes/_address_.address.html" class="tsd-signature-type">Address</a></h5>
-								</li>
-							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="serializeforsigning" class="tsd-anchor"></a>
-					<h3>serialize<wbr>For<wbr>Signing</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">serialize<wbr>For<wbr>Signing<span class="tsd-signature-symbol">(</span>signedBy<span class="tsd-signature-symbol">: </span><a href="../classes/_address_.address.html" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/67cc3da/erdjs/src/interface.ts#L31">src/interface.ts:31</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>signedBy: <a href="../classes/_address_.address.html" class="tsd-signature-type">Address</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Buffer</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -159,32 +118,29 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/_interface_.html">&quot;interface&quot;</a>
+						<a href="../modules/_events_.html">&quot;events&quot;</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_interface_.provider.html" class="tsd-kind-icon">Provider</a>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../classes/_events_.typedevent.html" class="tsd-kind-icon">Typed<wbr>Event</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="_interface_.signable.html" class="tsd-kind-icon">Signable</a>
+						<a href="_events_.disposable.html" class="tsd-kind-icon">Disposable</a>
 						<ul>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_interface_.signable.html#applysignature" class="tsd-kind-icon">apply<wbr>Signature</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_interface_.signable.html#serializeforsigning" class="tsd-kind-icon">serialize<wbr>For<wbr>Signing</a>
+								<a href="_events_.disposable.html#dispose" class="tsd-kind-icon">dispose</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_interface_.signer.html" class="tsd-kind-icon">Signer</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="_events_.listener.html" class="tsd-kind-icon">Listener</a>
 					</li>
 				</ul>
 			</nav>
@@ -196,15 +152,20 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 			</ul>
 		</div>
 	</div>

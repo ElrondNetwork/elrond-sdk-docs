@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Provider | @elrondnetwork/erdjs</title>
+	<title>IProvider | @elrondnetwork/erdjs</title>
 	<meta name="description" content="Documentation for @elrondnetwork/erdjs">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_interface_.html">&quot;interface&quot;</a>
 				</li>
 				<li>
-					<a href="_interface_.provider.html">Provider</a>
+					<a href="_interface_.iprovider.html">IProvider</a>
 				</li>
 			</ul>
-			<h1>Interface Provider</h1>
+			<h1>Interface IProvider</h1>
 		</div>
 	</div>
 </header>
@@ -73,13 +73,14 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Provider</span>
+						<span class="target">IProvider</span>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel">
 				<h3>Implemented by</h3>
 				<ul class="tsd-hierarchy">
+					<li><a href="../classes/_mockprovider_.mockprovider.html" class="tsd-signature-type">MockProvider</a></li>
 					<li><a href="../classes/_proxyprovider_.proxyprovider.html" class="tsd-signature-type">ProxyProvider</a></li>
 				</ul>
 			</section>
@@ -90,17 +91,17 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_interface_.provider.html#getaccount" class="tsd-kind-icon">get<wbr>Account</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_interface_.provider.html#getbalance" class="tsd-kind-icon">get<wbr>Balance</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_interface_.provider.html#getnetworkconfig" class="tsd-kind-icon">get<wbr>Network<wbr>Config</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_interface_.provider.html#getnonce" class="tsd-kind-icon">get<wbr>Nonce</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_interface_.provider.html#gettransaction" class="tsd-kind-icon">get<wbr>Transaction</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_interface_.provider.html#gettransactionstatus" class="tsd-kind-icon">get<wbr>Transaction<wbr>Status</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_interface_.provider.html#getvmvaluehex" class="tsd-kind-icon">getVMValue<wbr>Hex</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_interface_.provider.html#getvmvalueint" class="tsd-kind-icon">getVMValue<wbr>Int</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_interface_.provider.html#getvmvaluequery" class="tsd-kind-icon">getVMValue<wbr>Query</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_interface_.provider.html#getvmvaluestring" class="tsd-kind-icon">getVMValue<wbr>String</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_interface_.provider.html#sendtransaction" class="tsd-kind-icon">send<wbr>Transaction</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_interface_.iprovider.html#getaccount" class="tsd-kind-icon">get<wbr>Account</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_interface_.iprovider.html#getbalance" class="tsd-kind-icon">get<wbr>Balance</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_interface_.iprovider.html#getnetworkconfig" class="tsd-kind-icon">get<wbr>Network<wbr>Config</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_interface_.iprovider.html#getnonce" class="tsd-kind-icon">get<wbr>Nonce</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_interface_.iprovider.html#gettransaction" class="tsd-kind-icon">get<wbr>Transaction</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_interface_.iprovider.html#gettransactionstatus" class="tsd-kind-icon">get<wbr>Transaction<wbr>Status</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_interface_.iprovider.html#getvmvaluehex" class="tsd-kind-icon">getVMValue<wbr>Hex</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_interface_.iprovider.html#getvmvalueint" class="tsd-kind-icon">getVMValue<wbr>Int</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_interface_.iprovider.html#getvmvaluequery" class="tsd-kind-icon">getVMValue<wbr>Query</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_interface_.iprovider.html#getvmvaluestring" class="tsd-kind-icon">getVMValue<wbr>String</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_interface_.iprovider.html#sendtransaction" class="tsd-kind-icon">send<wbr>Transaction</a></li>
 							</ul>
 						</section>
 					</div>
@@ -118,7 +119,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/67cc3da/erdjs/src/interface.ts#L11">src/interface.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/interface.ts#L12">src/interface.ts:12</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -141,7 +142,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/67cc3da/erdjs/src/interface.ts#L12">src/interface.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/interface.ts#L13">src/interface.ts:13</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -164,7 +165,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/67cc3da/erdjs/src/interface.ts#L9">src/interface.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/interface.ts#L10">src/interface.ts:10</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/_networkconfig_.networkconfig.html" class="tsd-signature-type">NetworkConfig</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -181,7 +182,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/67cc3da/erdjs/src/interface.ts#L13">src/interface.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/interface.ts#L14">src/interface.ts:14</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -204,7 +205,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/67cc3da/erdjs/src/interface.ts#L21">src/interface.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/interface.ts#L22">src/interface.ts:22</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -221,22 +222,22 @@
 					<a name="gettransactionstatus" class="tsd-anchor"></a>
 					<h3>get<wbr>Transaction<wbr>Status</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Transaction<wbr>Status<span class="tsd-signature-symbol">(</span>txHash<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Transaction<wbr>Status<span class="tsd-signature-symbol">(</span>txHash<span class="tsd-signature-symbol">: </span><a href="../classes/_transaction_.transactionhash.html" class="tsd-signature-type">TransactionHash</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/_transaction_.transactionstatus.html" class="tsd-signature-type">TransactionStatus</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/67cc3da/erdjs/src/interface.ts#L22">src/interface.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/interface.ts#L23">src/interface.ts:23</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>txHash: <span class="tsd-signature-type">string</span></h5>
+									<h5>txHash: <a href="../classes/_transaction_.transactionhash.html" class="tsd-signature-type">TransactionHash</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/_transaction_.transactionstatus.html" class="tsd-signature-type">TransactionStatus</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -250,7 +251,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/67cc3da/erdjs/src/interface.ts#L17">src/interface.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/interface.ts#L18">src/interface.ts:18</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -279,7 +280,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/67cc3da/erdjs/src/interface.ts#L16">src/interface.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/interface.ts#L17">src/interface.ts:17</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -308,7 +309,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/67cc3da/erdjs/src/interface.ts#L18">src/interface.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/interface.ts#L19">src/interface.ts:19</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -337,7 +338,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/67cc3da/erdjs/src/interface.ts#L15">src/interface.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/interface.ts#L16">src/interface.ts:16</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -366,7 +367,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/67cc3da/erdjs/src/interface.ts#L20">src/interface.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/interface.ts#L21">src/interface.ts:21</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -397,50 +398,50 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="_interface_.provider.html" class="tsd-kind-icon">Provider</a>
+						<a href="_interface_.iprovider.html" class="tsd-kind-icon">IProvider</a>
 						<ul>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_interface_.provider.html#getaccount" class="tsd-kind-icon">get<wbr>Account</a>
+								<a href="_interface_.iprovider.html#getaccount" class="tsd-kind-icon">get<wbr>Account</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_interface_.provider.html#getbalance" class="tsd-kind-icon">get<wbr>Balance</a>
+								<a href="_interface_.iprovider.html#getbalance" class="tsd-kind-icon">get<wbr>Balance</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_interface_.provider.html#getnetworkconfig" class="tsd-kind-icon">get<wbr>Network<wbr>Config</a>
+								<a href="_interface_.iprovider.html#getnetworkconfig" class="tsd-kind-icon">get<wbr>Network<wbr>Config</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_interface_.provider.html#getnonce" class="tsd-kind-icon">get<wbr>Nonce</a>
+								<a href="_interface_.iprovider.html#getnonce" class="tsd-kind-icon">get<wbr>Nonce</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_interface_.provider.html#gettransaction" class="tsd-kind-icon">get<wbr>Transaction</a>
+								<a href="_interface_.iprovider.html#gettransaction" class="tsd-kind-icon">get<wbr>Transaction</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_interface_.provider.html#gettransactionstatus" class="tsd-kind-icon">get<wbr>Transaction<wbr>Status</a>
+								<a href="_interface_.iprovider.html#gettransactionstatus" class="tsd-kind-icon">get<wbr>Transaction<wbr>Status</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_interface_.provider.html#getvmvaluehex" class="tsd-kind-icon">getVMValue<wbr>Hex</a>
+								<a href="_interface_.iprovider.html#getvmvaluehex" class="tsd-kind-icon">getVMValue<wbr>Hex</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_interface_.provider.html#getvmvalueint" class="tsd-kind-icon">getVMValue<wbr>Int</a>
+								<a href="_interface_.iprovider.html#getvmvalueint" class="tsd-kind-icon">getVMValue<wbr>Int</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_interface_.provider.html#getvmvaluequery" class="tsd-kind-icon">getVMValue<wbr>Query</a>
+								<a href="_interface_.iprovider.html#getvmvaluequery" class="tsd-kind-icon">getVMValue<wbr>Query</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_interface_.provider.html#getvmvaluestring" class="tsd-kind-icon">getVMValue<wbr>String</a>
+								<a href="_interface_.iprovider.html#getvmvaluestring" class="tsd-kind-icon">getVMValue<wbr>String</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_interface_.provider.html#sendtransaction" class="tsd-kind-icon">send<wbr>Transaction</a>
+								<a href="_interface_.iprovider.html#sendtransaction" class="tsd-kind-icon">send<wbr>Transaction</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_interface_.signable.html" class="tsd-kind-icon">Signable</a>
+						<a href="_interface_.isignable.html" class="tsd-kind-icon">ISignable</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_interface_.signer.html" class="tsd-kind-icon">Signer</a>
+						<a href="_interface_.isigner.html" class="tsd-kind-icon">ISigner</a>
 					</li>
 				</ul>
 			</nav>
@@ -452,15 +453,20 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 			</ul>
 		</div>
 	</div>
