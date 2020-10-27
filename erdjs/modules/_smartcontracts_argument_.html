@@ -97,9 +97,19 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/smartcontracts/argument.ts#L49">src/smartcontracts/argument.ts:49</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/2b75b1c/erdjs/src/smartcontracts/argument.ts#L92">src/smartcontracts/argument.ts:92</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Appends Argument objects to a given string.
+										The resulted string is to be used for preparing Smart Contract calls (or deployments).
+										In general, this function should not be used directly.
+									It is used by <a href="../classes/_transactionpayload_.transactionpayload.html">TransactionPayload</a> builders (such as <a href="../classes/_smartcontracts_transactionpayloadbuilders_.contractcallpayloadbuilder.html">ContractCallPayloadBuilder</a>), under the hood.</p>
+								</div>
+								<pre><code><span class="hljs-keyword">let</span> data = append<span class="hljs-constructor">Arguments(<span class="hljs-string">&quot;transferToken&quot;</span>, [Argument.<span class="hljs-params">pubkey</span>(<span class="hljs-params">alice</span>)</span>, <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Argument</span>.</span></span>number(<span class="hljs-number">42</span>)]);
+<span class="hljs-keyword">let</span> payload = <span class="hljs-keyword">new</span> <span class="hljs-constructor">TransactionPayload(<span class="hljs-params">data</span>)</span>;</code></pre>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -107,6 +117,8 @@
 								</li>
 								<li>
 									<h5>args: <a href="../classes/_smartcontracts_argument_.argument.html" class="tsd-signature-type">Argument</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>

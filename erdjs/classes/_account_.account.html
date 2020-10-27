@@ -69,6 +69,13 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>An abstraction representing an account (user or Smart Contract) on the Network.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -93,7 +100,6 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_account_.account.html#address" class="tsd-kind-icon">address</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_account_.account.html#asonnetwork" class="tsd-kind-icon">as<wbr>OnNetwork</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_account_.account.html#balance" class="tsd-kind-icon">balance</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_account_.account.html#code" class="tsd-kind-icon">code</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_account_.account.html#nonce" class="tsd-kind-icon">nonce</a></li>
 							</ul>
 						</section>
@@ -104,7 +110,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_account_.account.html#getasonnetworkcached" class="tsd-kind-icon">get<wbr>AsOn<wbr>Network<wbr>Cached</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_account_.account.html#incrementnonce" class="tsd-kind-icon">increment<wbr>Nonce</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_account_.account.html#sync" class="tsd-kind-icon">sync</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_account_.account.html#toplainobject" class="tsd-kind-icon">to<wbr>Plain<wbr>Object</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_account_.account.html#tojson" class="tsd-kind-icon">toJSON</a></li>
 							</ul>
 						</section>
 					</div>
@@ -122,7 +128,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/account.ts#L12">src/account.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/2b75b1c/erdjs/src/account.ts#L25">src/account.ts:25</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -149,9 +155,14 @@
 					<div class="tsd-signature tsd-kind-icon">address<span class="tsd-signature-symbol">:</span> <a href="_address_.address.html" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol"> = new Address()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/account.ts#L7">src/account.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/2b75b1c/erdjs/src/account.ts#L13">src/account.ts:13</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The address of the account.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="asonnetwork" class="tsd-anchor"></a>
@@ -159,7 +170,7 @@
 					<div class="tsd-signature tsd-kind-icon">as<wbr>OnNetwork<span class="tsd-signature-symbol">:</span> <a href="_account_.accountonnetwork.html" class="tsd-signature-type">AccountOnNetwork</a><span class="tsd-signature-symbol"> = new AccountOnNetwork()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/account.ts#L12">src/account.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/2b75b1c/erdjs/src/account.ts#L25">src/account.ts:25</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -169,19 +180,14 @@
 					<div class="tsd-signature tsd-kind-icon">balance<span class="tsd-signature-symbol">:</span> <a href="_balance_.balance.html" class="tsd-signature-type">Balance</a><span class="tsd-signature-symbol"> = new Balance(BigInt(0))</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/account.ts#L9">src/account.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/2b75b1c/erdjs/src/account.ts#L23">src/account.ts:23</a></li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="code" class="tsd-anchor"></a>
-					<h3>code</h3>
-					<div class="tsd-signature tsd-kind-icon">code<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;&quot;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/account.ts#L10">src/account.ts:10</a></li>
-						</ul>
-					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The balance of the account.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="nonce" class="tsd-anchor"></a>
@@ -189,9 +195,14 @@
 					<div class="tsd-signature tsd-kind-icon">nonce<span class="tsd-signature-symbol">:</span> <a href="_nonce_.nonce.html" class="tsd-signature-type">Nonce</a><span class="tsd-signature-symbol"> = new Nonce(0)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/account.ts#L8">src/account.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/2b75b1c/erdjs/src/account.ts#L18">src/account.ts:18</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The nonce of the account (the account sequence number).</p>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -206,7 +217,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/account.ts#L26">src/account.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/2b75b1c/erdjs/src/account.ts#L39">src/account.ts:39</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -243,7 +254,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/account.ts#L41">src/account.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/2b75b1c/erdjs/src/account.ts#L54">src/account.ts:54</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -265,9 +276,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/account.ts#L55">src/account.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/2b75b1c/erdjs/src/account.ts#L71">src/account.ts:71</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Increments (locally) the nonce (the account sequence number).</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -282,7 +298,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/account.ts#L49">src/account.ts:49</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/2b75b1c/erdjs/src/account.ts#L62">src/account.ts:62</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -304,18 +320,23 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="toplainobject" class="tsd-anchor"></a>
-					<h3>to<wbr>Plain<wbr>Object</h3>
+					<a name="tojson" class="tsd-anchor"></a>
+					<h3>toJSON</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Plain<wbr>Object<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">toJSON<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/4702e87/erdjs/src/account.ts#L59">src/account.ts:59</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/2b75b1c/erdjs/src/account.ts#L78">src/account.ts:78</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Converts the account to a pretty, plain JavaScript object.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 						</li>
 					</ul>
@@ -353,9 +374,6 @@
 								<a href="_account_.account.html#balance" class="tsd-kind-icon">balance</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_account_.account.html#code" class="tsd-kind-icon">code</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_account_.account.html#nonce" class="tsd-kind-icon">nonce</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -371,7 +389,7 @@
 								<a href="_account_.account.html#sync" class="tsd-kind-icon">sync</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_account_.account.html#toplainobject" class="tsd-kind-icon">to<wbr>Plain<wbr>Object</a>
+								<a href="_account_.account.html#tojson" class="tsd-kind-icon">toJSON</a>
 							</li>
 						</ul>
 					</li>
