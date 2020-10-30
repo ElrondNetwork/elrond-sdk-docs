@@ -106,15 +106,10 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_proxyprovider_.proxyprovider.html#doget" class="tsd-kind-icon">do<wbr>Get</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_proxyprovider_.proxyprovider.html#dopost" class="tsd-kind-icon">do<wbr>Post</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_proxyprovider_.proxyprovider.html#getaccount" class="tsd-kind-icon">get<wbr>Account</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_proxyprovider_.proxyprovider.html#getbalance" class="tsd-kind-icon">get<wbr>Balance</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_proxyprovider_.proxyprovider.html#getnetworkconfig" class="tsd-kind-icon">get<wbr>Network<wbr>Config</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_proxyprovider_.proxyprovider.html#getnonce" class="tsd-kind-icon">get<wbr>Nonce</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_proxyprovider_.proxyprovider.html#gettransaction" class="tsd-kind-icon">get<wbr>Transaction</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_proxyprovider_.proxyprovider.html#gettransactionstatus" class="tsd-kind-icon">get<wbr>Transaction<wbr>Status</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_proxyprovider_.proxyprovider.html#getvmvaluehex" class="tsd-kind-icon">getVMValue<wbr>Hex</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_proxyprovider_.proxyprovider.html#getvmvalueint" class="tsd-kind-icon">getVMValue<wbr>Int</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_proxyprovider_.proxyprovider.html#getvmvaluequery" class="tsd-kind-icon">getVMValue<wbr>Query</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_proxyprovider_.proxyprovider.html#getvmvaluestring" class="tsd-kind-icon">getVMValue<wbr>String</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_proxyprovider_.proxyprovider.html#querycontract" class="tsd-kind-icon">query<wbr>Contract</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_proxyprovider_.proxyprovider.html#sendtransaction" class="tsd-kind-icon">send<wbr>Transaction</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_proxyprovider_.proxyprovider.html#simulatetransaction" class="tsd-kind-icon">simulate<wbr>Transaction</a></li>
 							</ul>
@@ -134,16 +129,31 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/8f393d7/erdjs/src/proxyProvider.ts#L13">src/proxyProvider.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/87a3621/erdjs/src/proxyProvider.ts#L14">src/proxyProvider.ts:14</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a new ProxyProvider.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>url: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>the URL of the Elrond Proxy</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> timeout: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>the timeout for any request-response, in milliseconds</p>
+										</div>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_proxyprovider_.proxyprovider.html" class="tsd-signature-type">ProxyProvider</a></h4>
@@ -159,7 +169,7 @@
 					<div class="tsd-signature tsd-kind-icon">timeout<wbr>Limit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/8f393d7/erdjs/src/proxyProvider.ts#L13">src/proxyProvider.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/87a3621/erdjs/src/proxyProvider.ts#L14">src/proxyProvider.ts:14</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -169,7 +179,7 @@
 					<div class="tsd-signature tsd-kind-icon">url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/8f393d7/erdjs/src/proxyProvider.ts#L12">src/proxyProvider.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/87a3621/erdjs/src/proxyProvider.ts#L13">src/proxyProvider.ts:13</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -186,7 +196,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/8f393d7/erdjs/src/proxyProvider.ts#L127">src/proxyProvider.ts:127</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/87a3621/erdjs/src/proxyProvider.ts#L92">src/proxyProvider.ts:92</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -209,7 +219,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/8f393d7/erdjs/src/proxyProvider.ts#L144">src/proxyProvider.ts:144</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/87a3621/erdjs/src/proxyProvider.ts#L110">src/proxyProvider.ts:110</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -236,9 +246,14 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_interface_.iprovider.html">IProvider</a>.<a href="../interfaces/_interface_.iprovider.html#getaccount">getAccount</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/8f393d7/erdjs/src/proxyProvider.ts#L20">src/proxyProvider.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/87a3621/erdjs/src/proxyProvider.ts#L29">src/proxyProvider.ts:29</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches the state of an <a href="_account_.account.html">Account</a>.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -246,30 +261,6 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_account_.accountonnetwork.html" class="tsd-signature-type">AccountOnNetwork</a><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getbalance" class="tsd-anchor"></a>
-					<h3>get<wbr>Balance</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Balance<span class="tsd-signature-symbol">(</span>address<span class="tsd-signature-symbol">: </span><a href="_address_.address.html" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_balance_.balance.html" class="tsd-signature-type">Balance</a><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_interface_.iprovider.html">IProvider</a>.<a href="../interfaces/_interface_.iprovider.html#getbalance">getBalance</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/8f393d7/erdjs/src/proxyProvider.ts#L26">src/proxyProvider.ts:26</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>address: <a href="_address_.address.html" class="tsd-signature-type">Address</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_balance_.balance.html" class="tsd-signature-type">Balance</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -284,34 +275,15 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_interface_.iprovider.html">IProvider</a>.<a href="../interfaces/_interface_.iprovider.html#getnetworkconfig">getNetworkConfig</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/8f393d7/erdjs/src/proxyProvider.ts#L121">src/proxyProvider.ts:121</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/87a3621/erdjs/src/proxyProvider.ts#L86">src/proxyProvider.ts:86</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches the Network configuration.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_networkconfig_.networkconfig.html" class="tsd-signature-type">NetworkConfig</a><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getnonce" class="tsd-anchor"></a>
-					<h3>get<wbr>Nonce</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Nonce<span class="tsd-signature-symbol">(</span>address<span class="tsd-signature-symbol">: </span><a href="_address_.address.html" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_nonce_.nonce.html" class="tsd-signature-type">Nonce</a><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_interface_.iprovider.html">IProvider</a>.<a href="../interfaces/_interface_.iprovider.html#getnonce">getNonce</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/8f393d7/erdjs/src/proxyProvider.ts#L32">src/proxyProvider.ts:32</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>address: <a href="_address_.address.html" class="tsd-signature-type">Address</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_nonce_.nonce.html" class="tsd-signature-type">Nonce</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -326,9 +298,14 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_interface_.iprovider.html">IProvider</a>.<a href="../interfaces/_interface_.iprovider.html#gettransaction">getTransaction</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/8f393d7/erdjs/src/proxyProvider.ts#L110">src/proxyProvider.ts:110</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/87a3621/erdjs/src/proxyProvider.ts#L69">src/proxyProvider.ts:69</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches the state of a <a href="_transaction_.transaction.html">Transaction</a>.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -350,9 +327,14 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_interface_.iprovider.html">IProvider</a>.<a href="../interfaces/_interface_.iprovider.html#gettransactionstatus">getTransactionStatus</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/8f393d7/erdjs/src/proxyProvider.ts#L116">src/proxyProvider.ts:116</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/87a3621/erdjs/src/proxyProvider.ts#L78">src/proxyProvider.ts:78</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Queries the status of a <a href="_transaction_.transaction.html">Transaction</a>.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -364,122 +346,31 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getvmvaluehex" class="tsd-anchor"></a>
-					<h3>getVMValue<wbr>Hex</h3>
+					<a name="querycontract" class="tsd-anchor"></a>
+					<h3>query<wbr>Contract</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">getVMValue<wbr>Hex<span class="tsd-signature-symbol">(</span>address<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, funcName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">query<wbr>Contract<span class="tsd-signature-symbol">(</span>query<span class="tsd-signature-symbol">: </span><a href="_smartcontracts_query_.query.html" class="tsd-signature-type">Query</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_smartcontracts_query_.queryresponse.html" class="tsd-signature-type">QueryResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_interface_.iprovider.html">IProvider</a>.<a href="../interfaces/_interface_.iprovider.html#getvmvaluehex">getVMValueHex</a></p>
+								<p>Implementation of <a href="../interfaces/_interface_.iprovider.html">IProvider</a>.<a href="../interfaces/_interface_.iprovider.html#querycontract">queryContract</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/8f393d7/erdjs/src/proxyProvider.ts#L68">src/proxyProvider.ts:68</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/87a3621/erdjs/src/proxyProvider.ts#L38">src/proxyProvider.ts:38</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Queries a Smart Contract - runs a pure function defined by the contract and returns its results.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>address: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>funcName: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>args: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>query: <a href="_smartcontracts_query_.query.html" class="tsd-signature-type">Query</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getvmvalueint" class="tsd-anchor"></a>
-					<h3>getVMValue<wbr>Int</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">getVMValue<wbr>Int<span class="tsd-signature-symbol">(</span>address<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, funcName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_interface_.iprovider.html">IProvider</a>.<a href="../interfaces/_interface_.iprovider.html#getvmvalueint">getVMValueInt</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/8f393d7/erdjs/src/proxyProvider.ts#L53">src/proxyProvider.ts:53</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>address: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>funcName: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>args: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getvmvaluequery" class="tsd-anchor"></a>
-					<h3>getVMValue<wbr>Query</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">getVMValue<wbr>Query<span class="tsd-signature-symbol">(</span>address<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, funcName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_interface_.iprovider.html">IProvider</a>.<a href="../interfaces/_interface_.iprovider.html#getvmvaluequery">getVMValueQuery</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/8f393d7/erdjs/src/proxyProvider.ts#L83">src/proxyProvider.ts:83</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>address: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>funcName: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>args: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getvmvaluestring" class="tsd-anchor"></a>
-					<h3>getVMValue<wbr>String</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">getVMValue<wbr>String<span class="tsd-signature-symbol">(</span>address<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, funcName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_interface_.iprovider.html">IProvider</a>.<a href="../interfaces/_interface_.iprovider.html#getvmvaluestring">getVMValueString</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/8f393d7/erdjs/src/proxyProvider.ts#L38">src/proxyProvider.ts:38</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>address: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>funcName: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>args: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_smartcontracts_query_.queryresponse.html" class="tsd-signature-type">QueryResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -494,9 +385,14 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_interface_.iprovider.html">IProvider</a>.<a href="../interfaces/_interface_.iprovider.html#sendtransaction">sendTransaction</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/8f393d7/erdjs/src/proxyProvider.ts#L98">src/proxyProvider.ts:98</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/87a3621/erdjs/src/proxyProvider.ts#L52">src/proxyProvider.ts:52</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Broadcasts an already-signed <a href="_transaction_.transaction.html">Transaction</a>.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -518,9 +414,14 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_interface_.iprovider.html">IProvider</a>.<a href="../interfaces/_interface_.iprovider.html#simulatetransaction">simulateTransaction</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/8f393d7/erdjs/src/proxyProvider.ts#L104">src/proxyProvider.ts:104</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/87a3621/erdjs/src/proxyProvider.ts#L61">src/proxyProvider.ts:61</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Simulates the processing of an already-signed <a href="_transaction_.transaction.html">Transaction</a>.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -570,13 +471,7 @@
 								<a href="_proxyprovider_.proxyprovider.html#getaccount" class="tsd-kind-icon">get<wbr>Account</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_proxyprovider_.proxyprovider.html#getbalance" class="tsd-kind-icon">get<wbr>Balance</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_proxyprovider_.proxyprovider.html#getnetworkconfig" class="tsd-kind-icon">get<wbr>Network<wbr>Config</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_proxyprovider_.proxyprovider.html#getnonce" class="tsd-kind-icon">get<wbr>Nonce</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_proxyprovider_.proxyprovider.html#gettransaction" class="tsd-kind-icon">get<wbr>Transaction</a>
@@ -585,16 +480,7 @@
 								<a href="_proxyprovider_.proxyprovider.html#gettransactionstatus" class="tsd-kind-icon">get<wbr>Transaction<wbr>Status</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_proxyprovider_.proxyprovider.html#getvmvaluehex" class="tsd-kind-icon">getVMValue<wbr>Hex</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_proxyprovider_.proxyprovider.html#getvmvalueint" class="tsd-kind-icon">getVMValue<wbr>Int</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_proxyprovider_.proxyprovider.html#getvmvaluequery" class="tsd-kind-icon">getVMValue<wbr>Query</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_proxyprovider_.proxyprovider.html#getvmvaluestring" class="tsd-kind-icon">getVMValue<wbr>String</a>
+								<a href="_proxyprovider_.proxyprovider.html#querycontract" class="tsd-kind-icon">query<wbr>Contract</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_proxyprovider_.proxyprovider.html#sendtransaction" class="tsd-kind-icon">send<wbr>Transaction</a>
@@ -606,6 +492,9 @@
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/_proxyprovider_.html#jsonbig" class="tsd-kind-icon">JSONbig</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
