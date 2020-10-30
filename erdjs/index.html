@@ -77,6 +77,111 @@
 				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
 					<h2>Usage</h2>
 				</a>
+				<p>The most comprehensive usage examples are captured within the unit and the integration tests. Specifically, in the <code>*.spec.ts</code> files of the source code. For example:</p>
+				<ul>
+					<li><a href="src/transaction.localTestnet.spec.ts">transaction.localTestnet.spec.ts</a></li>
+					<li><a href="src/address.spec.ts">address.spec.ts</a></li>
+					<li><a href="src/smartcontracts/transactionPayloadBuilders.spec.ts">transactionPayloadBuilders.spec.ts</a></li>
+					<li><a href="src/smartcontracts/smartContract.spec.ts">smartContract.spec.ts</a></li>
+					<li><a href="src/smartcontracts/smartContract.localTestnet.spec.ts">smartContract.localTestnet.spec.ts</a></li>
+					<li><a href="src/smartcontracts/query.spec.ts">query.spec.ts</a></li>
+					<li><a href="src/smartcontracts/query.mainnet.spec.ts">query.mainnet.spec.ts</a></li>
+				</ul>
+				<p>Additional examples (please note that they are slighly <em>out-of-date</em> though) can be found here:</p>
+				<ul>
+					<li><a href="https://github.com/ElrondNetwork/elrond-sdk/tree/erdjs-development/docs/erdjs/examples/basic">Basic Example</a></li>
+					<li><a href="https://github.com/ElrondNetwork/elrond-sdk/tree/erdjs-development/docs/erdjs/examples/backend-dispatcher">Backend Dispatcher</a></li>
+				</ul>
+				<a href="#synchronizing-network-parameters" id="synchronizing-network-parameters" style="color: inherit; text-decoration: none;">
+					<h3>Synchronizing network parameters</h3>
+				</a>
+				<pre><code><span class="hljs-keyword">let</span> provider = <span class="hljs-keyword">new</span> <span class="hljs-constructor">ProxyProvider(<span class="hljs-string">&quot;https://localhost:7950&quot;</span>)</span>;
+await <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">NetworkConfig</span>.</span></span>get<span class="hljs-constructor">Default()</span>.sync(provider);
+
+console.log(<span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">NetworkConfig</span>.</span></span>get<span class="hljs-constructor">Default()</span>.MinGasPrice);
+console.log(<span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">NetworkConfig</span>.</span></span>get<span class="hljs-constructor">Default()</span>.ChainID);</code></pre>
+				<a href="#synchronizing-an-account-object" id="synchronizing-an-account-object" style="color: inherit; text-decoration: none;">
+					<h3>Synchronizing an account object</h3>
+				</a>
+				<pre><code><span class="hljs-keyword">let</span> addressOfAlice = <span class="hljs-keyword">new</span> Address(<span class="hljs-string">&quot;erd1qyu5wthldzr8wx5c9ucg8kjagg0jfs53s8nr3zpz3hypefsdd8ssycr6th&quot;</span>);
+<span class="hljs-keyword">let</span> alice = <span class="hljs-keyword">new</span> Account(addressOfAlice);
+<span class="hljs-keyword">await</span> alice.sync(provider);
+
+<span class="hljs-built_in">console</span>.log(alice.nonce);
+<span class="hljs-built_in">console</span>.log(alice.balance);</code></pre>
+				<a href="#creating-value-transfer-transactions" id="creating-value-transfer-transactions" style="color: inherit; text-decoration: none;">
+					<h3>Creating value-transfer transactions</h3>
+				</a>
+				<pre><code><span class="hljs-keyword">await</span> alice.sync(provider);
+
+<span class="hljs-keyword">let</span> tx = <span class="hljs-keyword">new</span> Transaction({
+    data: <span class="hljs-keyword">new</span> TransactionPayload(<span class="hljs-string">&quot;helloWorld&quot;</span>),
+    gasLimit: <span class="hljs-keyword">new</span> GasLimit(<span class="hljs-number">70000</span>),
+    receiver: <span class="hljs-keyword">new</span> Address(<span class="hljs-string">&quot;erd1spyavw0956vq68xj8y4tenjpq2wd5a9p2c6j8gsz7ztyrnpxrruqzu66jx&quot;</span>),
+    <span class="hljs-keyword">value</span>: Balance.eGLD(<span class="hljs-number">1</span>)
+});
+
+tx.setNonce(alice.nonce);
+<span class="hljs-keyword">await</span> signer.sign(tx);
+<span class="hljs-keyword">await</span> tx.send(provider);</code></pre>
+				<a href="#creating-smart-contract-transactions" id="creating-smart-contract-transactions" style="color: inherit; text-decoration: none;">
+					<h3>Creating Smart Contract transactions</h3>
+				</a>
+				<pre><code><span class="hljs-keyword">let</span> contract = <span class="hljs-keyword">new</span> <span class="hljs-constructor">SmartContract({ <span class="hljs-params">address</span>: <span class="hljs-params">new</span> Address(<span class="hljs-string">&quot;erd1qqqqqqqqqqqqqpgq3ytm9m8dpeud35v3us20vsafp77smqghd8ss4jtm0q&quot;</span>)</span> });
+<span class="hljs-keyword">let</span> addressOfCarol = <span class="hljs-keyword">new</span> <span class="hljs-constructor">Address(<span class="hljs-string">&quot;erd1k2s324ww2g0yj38qn2ch2jwctdy8mnfxep94q9arncc6xecg3xaq6mjse8&quot;</span>)</span>;
+
+<span class="hljs-keyword">let</span> tx = contract.call({
+    func: <span class="hljs-keyword">new</span> <span class="hljs-constructor">ContractFunction(<span class="hljs-string">&quot;transferToken&quot;</span>)</span>,
+    gasLimit: <span class="hljs-keyword">new</span> <span class="hljs-constructor">GasLimit(5000000)</span>,
+    args: <span class="hljs-literal">[A<span class="hljs-identifier">rgument</span>.<span class="hljs-identifier">pubkey</span>(<span class="hljs-identifier">addressOfCarol</span>), A<span class="hljs-identifier">rgument</span>.<span class="hljs-identifier">number</span>(<span class="hljs-number">1000</span>)]</span>
+});
+
+tx.set<span class="hljs-constructor">Nonce(<span class="hljs-params">alice</span>.<span class="hljs-params">nonce</span>)</span>;
+await signer.sign(tx);
+await tx.send(provider);</code></pre>
+				<a href="#querying-smart-contracts" id="querying-smart-contracts" style="color: inherit; text-decoration: none;">
+					<h3>Querying Smart Contracts</h3>
+				</a>
+				<pre><code><span class="hljs-built_in">let</span> <span class="hljs-built_in">contract</span> = <span class="hljs-built_in">new</span> SmartContract({ address: <span class="hljs-built_in">new</span> Address(<span class="hljs-string">&quot;erd1qqqqqqqqqqqqqpgqxwakt2g7u9atsnr03gqcgmhcv38pt7mkd94q6shuwt&quot;</span>) });
+<span class="hljs-built_in">let</span> addressOfAlice = <span class="hljs-built_in">new</span> Address(<span class="hljs-string">&quot;erd1qyu5wthldzr8wx5c9ucg8kjagg0jfs53s8nr3zpz3hypefsdd8ssycr6th&quot;</span>);
+
+<span class="hljs-built_in">let</span> response = await <span class="hljs-built_in">contract</span>.runQuery(provider, {
+    func: <span class="hljs-built_in">new</span> ContractFunction(<span class="hljs-string">&quot;getClaimableRewards&quot;</span>),
+    <span class="hljs-built_in">args</span>: [Argument.pubkey(addressOfAlice)]
+});
+
+console.<span class="hljs-built_in">log</span>(response.isSuccess());
+console.<span class="hljs-built_in">log</span>(response.returnData);</code></pre>
+				<a href="#waiting-for-transactions-to-be-processed" id="waiting-for-transactions-to-be-processed" style="color: inherit; text-decoration: none;">
+					<h3>Waiting for transactions to be processed</h3>
+				</a>
+				<pre><code>await tx1.send(provider);
+await tx2.send(provider);
+await tx3.send(provider);
+
+await tx1.await<span class="hljs-constructor">Executed(<span class="hljs-params">provider</span>)</span>;
+await tx2.await<span class="hljs-constructor">Pending(<span class="hljs-params">provider</span>)</span>;
+
+<span class="hljs-keyword">let</span> watcher = <span class="hljs-keyword">new</span> <span class="hljs-constructor">TransactionWatcher(<span class="hljs-params">tx3</span>.<span class="hljs-params">hash</span>, <span class="hljs-params">provider</span>)</span>;
+await watcher.await<span class="hljs-constructor">Status(<span class="hljs-params">status</span> =&gt; <span class="hljs-params">status</span>.<span class="hljs-params">isExecuted</span>()</span>);</code></pre>
+				<a href="#managing-the-sender-nonce-locally" id="managing-the-sender-nonce-locally" style="color: inherit; text-decoration: none;">
+					<h3>Managing the sender nonce locally</h3>
+				</a>
+				<pre><code><span class="hljs-selector-tag">await</span> <span class="hljs-selector-tag">alice</span><span class="hljs-selector-class">.sync</span>(<span class="hljs-selector-tag">provider</span>);
+
+<span class="hljs-selector-tag">txA</span><span class="hljs-selector-class">.setNonce</span>(<span class="hljs-selector-tag">alice</span><span class="hljs-selector-class">.nonce</span>);
+<span class="hljs-selector-tag">alice</span><span class="hljs-selector-class">.incrementNonce</span>();
+<span class="hljs-selector-tag">txB</span><span class="hljs-selector-class">.setNonce</span>(<span class="hljs-selector-tag">alice</span><span class="hljs-selector-class">.nonce</span>);
+<span class="hljs-selector-tag">alice</span><span class="hljs-selector-class">.incrementNonce</span>();
+
+<span class="hljs-selector-tag">await</span> <span class="hljs-selector-tag">signer</span><span class="hljs-selector-class">.sign</span>(<span class="hljs-selector-tag">txA</span>);
+<span class="hljs-selector-tag">await</span> <span class="hljs-selector-tag">signer</span><span class="hljs-selector-class">.sign</span>(<span class="hljs-selector-tag">txB</span>);
+
+<span class="hljs-selector-tag">await</span> <span class="hljs-selector-tag">txA</span><span class="hljs-selector-class">.send</span>(<span class="hljs-selector-tag">provider</span>);
+<span class="hljs-selector-tag">await</span> <span class="hljs-selector-tag">txB</span><span class="hljs-selector-class">.send</span>(<span class="hljs-selector-tag">provider</span>);
+
+<span class="hljs-selector-tag">await</span> <span class="hljs-selector-tag">txA</span><span class="hljs-selector-class">.awaitExecuted</span>(<span class="hljs-selector-tag">provider</span>);
+<span class="hljs-selector-tag">await</span> <span class="hljs-selector-tag">txB</span><span class="hljs-selector-class">.awaitExecuted</span>(<span class="hljs-selector-tag">provider</span>);</code></pre>
 				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
 					<h2>Installation</h2>
 				</a>
