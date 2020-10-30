@@ -6,3 +6,7 @@ Auto-generated documentation for elrond-sdk, as Github Pages:
 - [erdjs](https://elrondnetwork.github.io/elrond-sdk-docs/erdjs)
 - [erdjava](https://elrondnetwork.github.io/elrond-sdk-docs/erdjava)
 - [erdtestjs](https://elrondnetwork.github.io/elrond-sdk-docs/erdtestjs)
+
+Documentation hosted separately:
+
+ - [erdgo](https://pkg.go.dev/github.com/ElrondNetwork/elrond-sdk/erdgo)
