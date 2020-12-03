@@ -126,14 +126,14 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Err<wbr>Invalid<wbr>Argument<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span>, inner<span class="tsd-signature-symbol">?: </span><a href="_errors_.err.html#error" class="tsd-signature-type">Error</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_errors_.errinvalidargument.html" class="tsd-signature-type">ErrInvalidArgument</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Err<wbr>Invalid<wbr>Argument<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span>, reason<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, inner<span class="tsd-signature-symbol">?: </span><a href="_errors_.err.html#error" class="tsd-signature-type">Error</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_errors_.errinvalidargument.html" class="tsd-signature-type">ErrInvalidArgument</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_errors_.err.html">Err</a>.<a href="_errors_.err.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/b225bd1/erdjs/src/errors.ts#L63">src/errors.ts:63</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/84689ce/erdjs/src/errors.ts#L63">src/errors.ts:63</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -143,6 +143,9 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> value: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> reason: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;not specified&quot;</span></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> inner: <a href="_errors_.err.html#error" class="tsd-signature-type">Error</a></h5>
@@ -162,7 +165,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_errors_.err.html">Err</a>.<a href="_errors_.err.html#inner">inner</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/b225bd1/erdjs/src/errors.ts#L5">src/errors.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/84689ce/erdjs/src/errors.ts#L5">src/errors.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -213,7 +216,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_errors_.err.html">Err</a>.<a href="_errors_.err.html#html">html</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/b225bd1/erdjs/src/errors.ts#L32">src/errors.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/84689ce/erdjs/src/errors.ts#L32">src/errors.ts:32</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -236,7 +239,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_errors_.err.html">Err</a>.<a href="_errors_.err.html#summary">summary</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/b225bd1/erdjs/src/errors.ts#L15">src/errors.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/84689ce/erdjs/src/errors.ts#L15">src/errors.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -252,13 +255,13 @@
 					<a name="getmessage" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Message</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Message<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Message<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span>, reason<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/b225bd1/erdjs/src/errors.ts#L68">src/errors.ts:68</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/84689ce/erdjs/src/errors.ts#L68">src/errors.ts:68</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -268,6 +271,9 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> value: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> reason: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -285,7 +291,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_errors_.err.html">Err</a>.<a href="_errors_.err.html#html">html</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/b225bd1/erdjs/src/errors.ts#L51">src/errors.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/84689ce/erdjs/src/errors.ts#L51">src/errors.ts:51</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -346,6 +352,9 @@
 						<a href="_errors_.errchainidinvalid.html" class="tsd-kind-icon">Err<wbr>ChainIDInvalid</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="_errors_.errcodec.html" class="tsd-kind-icon">Err<wbr>Codec</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="_errors_.errcontract.html" class="tsd-kind-icon">Err<wbr>Contract</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
@@ -400,6 +409,9 @@
 						<a href="_errors_.errinvalidfunctionname.html" class="tsd-kind-icon">Err<wbr>Invalid<wbr>Function<wbr>Name</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="_errors_.errinvariantfailed.html" class="tsd-kind-icon">Err<wbr>Invariant<wbr>Failed</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="_errors_.errmissingvalue.html" class="tsd-kind-icon">Err<wbr>Missing<wbr>Value</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
@@ -415,6 +427,9 @@
 						<a href="_errors_.errproxyproviderpost.html" class="tsd-kind-icon">Err<wbr>Proxy<wbr>Provider<wbr>Post</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="_errors_.errserialization.html" class="tsd-kind-icon">Err<wbr>Serialization</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="_errors_.errsignaturecannotcreate.html" class="tsd-kind-icon">Err<wbr>Signature<wbr>Cannot<wbr>Create</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
@@ -422,6 +437,9 @@
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="_errors_.errsignercannotsign.html" class="tsd-kind-icon">Err<wbr>Signer<wbr>Cannot<wbr>Sign</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="_errors_.errstructuretyping.html" class="tsd-kind-icon">Err<wbr>Structure<wbr>Typing</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="_errors_.errtest.html" class="tsd-kind-icon">Err<wbr>Test</a>
@@ -435,6 +453,15 @@
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="_errors_.errtransactionversioninvalid.html" class="tsd-kind-icon">Err<wbr>Transaction<wbr>Version<wbr>Invalid</a>
 					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="_errors_.errtypingsystem.html" class="tsd-kind-icon">Err<wbr>Typing<wbr>System</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="_errors_.errunknowntype.html" class="tsd-kind-icon">Err<wbr>Unknown<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="_errors_.errunsupportedoperation.html" class="tsd-kind-icon">Err<wbr>Unsupported<wbr>Operation</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -445,13 +472,14 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
-				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>

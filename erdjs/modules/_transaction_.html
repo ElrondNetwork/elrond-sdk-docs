@@ -83,8 +83,9 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="_transaction_.html#transaction_hash_length" class="tsd-kind-icon">TRANSACTION_<wbr>HASH_<wbr>LENGTH</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="_transaction_.html#transaction_version" class="tsd-kind-icon">TRANSACTION_<wbr>VERSION</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="_transaction_.html#createkeccakhash" class="tsd-kind-icon">create<wbr>Keccak<wbr>Hash</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="_transaction_.html#createtransactionhasher" class="tsd-kind-icon">create<wbr>Transaction<wbr>Hasher</a></li>
 							</ul>
 						</section>
 					</div>
@@ -93,22 +94,32 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Variables</h2>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="transaction_hash_length" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> TRANSACTION_<wbr>HASH_<wbr>LENGTH</h3>
+					<div class="tsd-signature tsd-kind-icon">TRANSACTION_<wbr>HASH_<wbr>LENGTH<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">32</span><span class="tsd-signature-symbol"> = 32</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/84689ce/erdjs/src/transaction.ts#L17">src/transaction.ts:17</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 					<a name="transaction_version" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> TRANSACTION_<wbr>VERSION</h3>
 					<div class="tsd-signature tsd-kind-icon">TRANSACTION_<wbr>VERSION<span class="tsd-signature-symbol">:</span> <a href="../classes/_networkparams_.transactionversion.html" class="tsd-signature-type">TransactionVersion</a><span class="tsd-signature-symbol"> = new TransactionVersion(1)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/b225bd1/erdjs/src/transaction.ts#L15">src/transaction.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/84689ce/erdjs/src/transaction.ts#L16">src/transaction.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-					<a name="createkeccakhash" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> create<wbr>Keccak<wbr>Hash</h3>
-					<div class="tsd-signature tsd-kind-icon">create<wbr>Keccak<wbr>Hash<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> = require(&quot;keccak&quot;)</span></div>
+					<a name="createtransactionhasher" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> create<wbr>Transaction<wbr>Hasher</h3>
+					<div class="tsd-signature tsd-kind-icon">create<wbr>Transaction<wbr>Hasher<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> = require(&quot;blake2b&quot;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/b225bd1/erdjs/src/transaction.ts#L13">src/transaction.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/ElrondNetwork/elrond-sdk/blob/84689ce/erdjs/src/transaction.ts#L14">src/transaction.ts:14</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -143,10 +154,13 @@
 						<a href="../classes/_transaction_.transactionstatus.html" class="tsd-kind-icon">Transaction<wbr>Status</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="_transaction_.html#transaction_hash_length" class="tsd-kind-icon">TRANSACTION_<wbr>HASH_<wbr>LENGTH</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 						<a href="_transaction_.html#transaction_version" class="tsd-kind-icon">TRANSACTION_<wbr>VERSION</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="_transaction_.html#createkeccakhash" class="tsd-kind-icon">create<wbr>Keccak<wbr>Hash</a>
+						<a href="_transaction_.html#createtransactionhasher" class="tsd-kind-icon">create<wbr>Transaction<wbr>Hasher</a>
 					</li>
 				</ul>
 			</nav>
@@ -160,6 +174,7 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
