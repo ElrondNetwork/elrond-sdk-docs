@@ -1,19 +1,20 @@
 
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>erdpy.wallet package &#8212; erdpy  documentation</title>
     <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
@@ -27,8 +28,7 @@
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">erdpy  documentation</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">erdpy.wallet package</a></li> 
+        <li class="nav-item nav-item-0"><a href="index.html">erdpy  documentation</a> &#187;</li> 
       </ul>
     </div>  
 
@@ -42,176 +42,50 @@
 <div class="section" id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="module-erdpy.wallet.bech32">
-<span id="erdpy-wallet-bech32-module"></span><h2>erdpy.wallet.bech32 module<a class="headerlink" href="#module-erdpy.wallet.bech32" title="Permalink to this headline">¶</a></h2>
-<p>Reference implementation for Bech32 and segwit addresses.</p>
-<dl class="py function">
-<dt id="erdpy.wallet.bech32.bech32_create_checksum">
-<code class="sig-prename descclassname">erdpy.wallet.bech32.</code><code class="sig-name descname">bech32_create_checksum</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hrp</span></em>, <em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.wallet.bech32.bech32_create_checksum" title="Permalink to this definition">¶</a></dt>
-<dd><p>Compute the checksum values given HRP and data.</p>
-</dd></dl>
-
-<dl class="py function">
-<dt id="erdpy.wallet.bech32.bech32_decode">
-<code class="sig-prename descclassname">erdpy.wallet.bech32.</code><code class="sig-name descname">bech32_decode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">bech</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.wallet.bech32.bech32_decode" title="Permalink to this definition">¶</a></dt>
-<dd><p>Validate a Bech32 string, and determine HRP and data.</p>
-</dd></dl>
-
-<dl class="py function">
-<dt id="erdpy.wallet.bech32.bech32_encode">
-<code class="sig-prename descclassname">erdpy.wallet.bech32.</code><code class="sig-name descname">bech32_encode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hrp</span></em>, <em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.wallet.bech32.bech32_encode" title="Permalink to this definition">¶</a></dt>
-<dd><p>Compute a Bech32 string given HRP and data values.</p>
-</dd></dl>
-
-<dl class="py function">
-<dt id="erdpy.wallet.bech32.bech32_hrp_expand">
-<code class="sig-prename descclassname">erdpy.wallet.bech32.</code><code class="sig-name descname">bech32_hrp_expand</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hrp</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.wallet.bech32.bech32_hrp_expand" title="Permalink to this definition">¶</a></dt>
-<dd><p>Expand the HRP into values for checksum computation.</p>
-</dd></dl>
-
-<dl class="py function">
-<dt id="erdpy.wallet.bech32.bech32_polymod">
-<code class="sig-prename descclassname">erdpy.wallet.bech32.</code><code class="sig-name descname">bech32_polymod</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.wallet.bech32.bech32_polymod" title="Permalink to this definition">¶</a></dt>
-<dd><p>Internal function that computes the Bech32 checksum.</p>
-</dd></dl>
-
-<dl class="py function">
-<dt id="erdpy.wallet.bech32.bech32_verify_checksum">
-<code class="sig-prename descclassname">erdpy.wallet.bech32.</code><code class="sig-name descname">bech32_verify_checksum</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hrp</span></em>, <em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.wallet.bech32.bech32_verify_checksum" title="Permalink to this definition">¶</a></dt>
-<dd><p>Verify a checksum given HRP and converted data characters.</p>
-</dd></dl>
-
-<dl class="py function">
-<dt id="erdpy.wallet.bech32.convertbits">
-<code class="sig-prename descclassname">erdpy.wallet.bech32.</code><code class="sig-name descname">convertbits</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">frombits</span></em>, <em class="sig-param"><span class="n">tobits</span></em>, <em class="sig-param"><span class="n">pad</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.wallet.bech32.convertbits" title="Permalink to this definition">¶</a></dt>
-<dd><p>General power-of-2 base conversion.</p>
-</dd></dl>
-
-<dl class="py function">
-<dt id="erdpy.wallet.bech32.decode">
-<code class="sig-prename descclassname">erdpy.wallet.bech32.</code><code class="sig-name descname">decode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hrp</span></em>, <em class="sig-param"><span class="n">addr</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.wallet.bech32.decode" title="Permalink to this definition">¶</a></dt>
-<dd><p>Decode a segwit address.</p>
-</dd></dl>
-
-<dl class="py function">
-<dt id="erdpy.wallet.bech32.encode">
-<code class="sig-prename descclassname">erdpy.wallet.bech32.</code><code class="sig-name descname">encode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hrp</span></em>, <em class="sig-param"><span class="n">witver</span></em>, <em class="sig-param"><span class="n">witprog</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.wallet.bech32.encode" title="Permalink to this definition">¶</a></dt>
-<dd><p>Encode a segwit address.</p>
-</dd></dl>
-
+<div class="section" id="erdpy-wallet-bech32-module">
+<h2>erdpy.wallet.bech32 module<a class="headerlink" href="#erdpy-wallet-bech32-module" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="module-erdpy.wallet.core">
 <span id="erdpy-wallet-core-module"></span><h2>erdpy.wallet.core module<a class="headerlink" href="#module-erdpy.wallet.core" title="Permalink to this headline">¶</a></h2>
-<dl class="py function">
+<dl class="function">
 <dt id="erdpy.wallet.core.bip39seed_to_master_key">
-<code class="sig-prename descclassname">erdpy.wallet.core.</code><code class="sig-name descname">bip39seed_to_master_key</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">seed</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.wallet.core.bip39seed_to_master_key" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">erdpy.wallet.core.</code><code class="descname">bip39seed_to_master_key</code><span class="sig-paren">(</span><em>seed</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.wallet.core.bip39seed_to_master_key" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="py function">
+<dl class="function">
 <dt id="erdpy.wallet.core.bip39seed_to_private_key">
-<code class="sig-prename descclassname">erdpy.wallet.core.</code><code class="sig-name descname">bip39seed_to_private_key</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">seed</span></em>, <em class="sig-param"><span class="n">account_index</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.wallet.core.bip39seed_to_private_key" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">erdpy.wallet.core.</code><code class="descname">bip39seed_to_private_key</code><span class="sig-paren">(</span><em>seed</em>, <em>account_index=0</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.wallet.core.bip39seed_to_private_key" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="py function">
+<dl class="function">
 <dt id="erdpy.wallet.core.derive_keys">
-<code class="sig-prename descclassname">erdpy.wallet.core.</code><code class="sig-name descname">derive_keys</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mnemonic</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.wallet.core.derive_keys" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">erdpy.wallet.core.</code><code class="descname">derive_keys</code><span class="sig-paren">(</span><em>mnemonic</em>, <em>account_index=0</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.wallet.core.derive_keys" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="py function">
+<dl class="function">
 <dt id="erdpy.wallet.core.mnemonic_to_bip39seed">
-<code class="sig-prename descclassname">erdpy.wallet.core.</code><code class="sig-name descname">mnemonic_to_bip39seed</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mnemonic</span></em>, <em class="sig-param"><span class="n">passphrase</span><span class="o">=</span><span class="default_value">''</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.wallet.core.mnemonic_to_bip39seed" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">erdpy.wallet.core.</code><code class="descname">mnemonic_to_bip39seed</code><span class="sig-paren">(</span><em>mnemonic</em>, <em>passphrase=''</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.wallet.core.mnemonic_to_bip39seed" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </div>
-<div class="section" id="module-erdpy.wallet.generator">
-<span id="erdpy-wallet-generator-module"></span><h2>erdpy.wallet.generator module<a class="headerlink" href="#module-erdpy.wallet.generator" title="Permalink to this headline">¶</a></h2>
-<dl class="py function">
-<dt id="erdpy.wallet.generator.generate_pair">
-<code class="sig-prename descclassname">erdpy.wallet.generator.</code><code class="sig-name descname">generate_pair</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.wallet.generator.generate_pair" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt id="erdpy.wallet.generator.generate_pairs">
-<code class="sig-prename descclassname">erdpy.wallet.generator.</code><code class="sig-name descname">generate_pairs</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.wallet.generator.generate_pairs" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
+<div class="section" id="erdpy-wallet-generator-module">
+<h2>erdpy.wallet.generator module<a class="headerlink" href="#erdpy-wallet-generator-module" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="module-erdpy.wallet.keyfile">
-<span id="erdpy-wallet-keyfile-module"></span><h2>erdpy.wallet.keyfile module<a class="headerlink" href="#module-erdpy.wallet.keyfile" title="Permalink to this headline">¶</a></h2>
-<dl class="py function">
-<dt id="erdpy.wallet.keyfile.get_password">
-<code class="sig-prename descclassname">erdpy.wallet.keyfile.</code><code class="sig-name descname">get_password</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pass_file</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.wallet.keyfile.get_password" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt id="erdpy.wallet.keyfile.load_from_key_file">
-<code class="sig-prename descclassname">erdpy.wallet.keyfile.</code><code class="sig-name descname">load_from_key_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">key_file_json</span></em>, <em class="sig-param"><span class="n">password</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.wallet.keyfile.load_from_key_file" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
+<div class="section" id="erdpy-wallet-keyfile-module">
+<h2>erdpy.wallet.keyfile module<a class="headerlink" href="#erdpy-wallet-keyfile-module" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="module-erdpy.wallet.pem">
-<span id="erdpy-wallet-pem-module"></span><h2>erdpy.wallet.pem module<a class="headerlink" href="#module-erdpy.wallet.pem" title="Permalink to this headline">¶</a></h2>
-<dl class="py function">
-<dt id="erdpy.wallet.pem.get_pubkey">
-<code class="sig-prename descclassname">erdpy.wallet.pem.</code><code class="sig-name descname">get_pubkey</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pem_file</span><span class="p">:</span> <span class="n">Union<span class="p">[</span>str<span class="p">, </span>pathlib.Path<span class="p">]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.wallet.pem.get_pubkey" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt id="erdpy.wallet.pem.parse">
-<code class="sig-prename descclassname">erdpy.wallet.pem.</code><code class="sig-name descname">parse</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pem_file</span><span class="p">:</span> <span class="n">Union<span class="p">[</span>str<span class="p">, </span>pathlib.Path<span class="p">]</span></span></em>, <em class="sig-param"><span class="n">index</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">0</span></em><span class="sig-paren">)</span> &#x2192; Tuple<span class="p">[</span>bytes<span class="p">, </span>bytes<span class="p">]</span><a class="headerlink" href="#erdpy.wallet.pem.parse" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt id="erdpy.wallet.pem.parse_validator_pem">
-<code class="sig-prename descclassname">erdpy.wallet.pem.</code><code class="sig-name descname">parse_validator_pem</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pem_file</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.wallet.pem.parse_validator_pem" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt id="erdpy.wallet.pem.write">
-<code class="sig-prename descclassname">erdpy.wallet.pem.</code><code class="sig-name descname">write</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pem_file</span><span class="p">:</span> <span class="n">Union<span class="p">[</span>str<span class="p">, </span>pathlib.Path<span class="p">]</span></span></em>, <em class="sig-param"><span class="n">seed</span><span class="p">:</span> <span class="n">bytes</span></em>, <em class="sig-param"><span class="n">pubkey</span><span class="p">:</span> <span class="n">bytes</span></em>, <em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">''</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.wallet.pem.write" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
+<div class="section" id="erdpy-wallet-pem-module">
+<h2>erdpy.wallet.pem module<a class="headerlink" href="#erdpy-wallet-pem-module" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="module-erdpy.wallet.signing">
-<span id="erdpy-wallet-signing-module"></span><h2>erdpy.wallet.signing module<a class="headerlink" href="#module-erdpy.wallet.signing" title="Permalink to this headline">¶</a></h2>
-<dl class="py function">
-<dt id="erdpy.wallet.signing.sign_message_with_bls_key">
-<code class="sig-prename descclassname">erdpy.wallet.signing.</code><code class="sig-name descname">sign_message_with_bls_key</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">message</span></em>, <em class="sig-param"><span class="n">seed</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.wallet.signing.sign_message_with_bls_key" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt id="erdpy.wallet.signing.sign_transaction">
-<code class="sig-prename descclassname">erdpy.wallet.signing.</code><code class="sig-name descname">sign_transaction</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">transaction</span><span class="p">:</span> <span class="n"><a class="reference internal" href="erdpy.html#erdpy.interfaces.ITransaction" title="erdpy.interfaces.ITransaction">erdpy.interfaces.ITransaction</a></span></em>, <em class="sig-param"><span class="n">account</span><span class="p">:</span> <span class="n"><a class="reference internal" href="erdpy.html#erdpy.interfaces.IAccount" title="erdpy.interfaces.IAccount">erdpy.interfaces.IAccount</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#erdpy.wallet.signing.sign_transaction" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
+<div class="section" id="erdpy-wallet-signing-module">
+<h2>erdpy.wallet.signing module<a class="headerlink" href="#erdpy-wallet-signing-module" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="module-erdpy.wallet">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-erdpy.wallet" title="Permalink to this headline">¶</a></h2>
-<dl class="py function">
-<dt id="erdpy.wallet.bip39seed_to_private_key">
-<code class="sig-prename descclassname">erdpy.wallet.</code><code class="sig-name descname">bip39seed_to_private_key</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">seed</span></em>, <em class="sig-param"><span class="n">account_index</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.wallet.bip39seed_to_private_key" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt id="erdpy.wallet.derive_keys">
-<code class="sig-prename descclassname">erdpy.wallet.</code><code class="sig-name descname">derive_keys</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mnemonic</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.wallet.derive_keys" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt id="erdpy.wallet.generate_pair">
-<code class="sig-prename descclassname">erdpy.wallet.</code><code class="sig-name descname">generate_pair</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.wallet.generate_pair" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt id="erdpy.wallet.mnemonic_to_bip39seed">
-<code class="sig-prename descclassname">erdpy.wallet.</code><code class="sig-name descname">mnemonic_to_bip39seed</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mnemonic</span></em>, <em class="sig-param"><span class="n">passphrase</span><span class="o">=</span><span class="default_value">''</span></em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.wallet.mnemonic_to_bip39seed" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
+<div class="section" id="module-contents">
+<h2>Module contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
 
-            <div class="clearer"></div>
           </div>
         </div>
       </div>
@@ -221,13 +95,13 @@
   <ul>
 <li><a class="reference internal" href="#">erdpy.wallet package</a><ul>
 <li><a class="reference internal" href="#submodules">Submodules</a></li>
-<li><a class="reference internal" href="#module-erdpy.wallet.bech32">erdpy.wallet.bech32 module</a></li>
+<li><a class="reference internal" href="#erdpy-wallet-bech32-module">erdpy.wallet.bech32 module</a></li>
 <li><a class="reference internal" href="#module-erdpy.wallet.core">erdpy.wallet.core module</a></li>
-<li><a class="reference internal" href="#module-erdpy.wallet.generator">erdpy.wallet.generator module</a></li>
-<li><a class="reference internal" href="#module-erdpy.wallet.keyfile">erdpy.wallet.keyfile module</a></li>
-<li><a class="reference internal" href="#module-erdpy.wallet.pem">erdpy.wallet.pem module</a></li>
-<li><a class="reference internal" href="#module-erdpy.wallet.signing">erdpy.wallet.signing module</a></li>
-<li><a class="reference internal" href="#module-erdpy.wallet">Module contents</a></li>
+<li><a class="reference internal" href="#erdpy-wallet-generator-module">erdpy.wallet.generator module</a></li>
+<li><a class="reference internal" href="#erdpy-wallet-keyfile-module">erdpy.wallet.keyfile module</a></li>
+<li><a class="reference internal" href="#erdpy-wallet-pem-module">erdpy.wallet.pem module</a></li>
+<li><a class="reference internal" href="#erdpy-wallet-signing-module">erdpy.wallet.signing module</a></li>
+<li><a class="reference internal" href="#module-contents">Module contents</a></li>
 </ul>
 </li>
 </ul>
@@ -240,15 +114,17 @@
     </ul>
    </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">Quick search</h3>
+  <h3>Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="text" name="q" />
       <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -262,13 +138,12 @@
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">erdpy  documentation</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">erdpy.wallet package</a></li> 
+        <li class="nav-item nav-item-0"><a href="index.html">erdpy  documentation</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2020, Elrond Network.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.2.1.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.
     </div>
   </body>
 </html>
