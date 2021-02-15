@@ -1,7 +1,7 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: Publish docs on Github Pages
+name: Publish erdpy docs on Github Pages
 
 on:
   workflow_dispatch:
@@ -28,24 +28,6 @@ jobs:
         path: elrond-sdk
         ref: ${{ github.event.inputs.elrondSdkRef }}
 
-    - name: Setup NodeJS (for erdjs docs)
-      uses: actions/setup-node@v1
-      with:
-        node-version: 12
-
-    - name: Set up Python (for erdpy docs)
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.8
-
-    - name: Build docs (erdjs)
-      run: |
-        cd ${GITHUB_WORKSPACE}/elrond-sdk/erdjs
-        npm ci
-        VERSION=$(node -p "require('./package.json').version")
-        npx typedoc --includeVersion --out "${GITHUB_WORKSPACE}/elrond-sdk-docs/erdjs/latest"
-        npx typedoc --includeVersion --out "${GITHUB_WORKSPACE}/elrond-sdk-docs/erdjs/${VERSION}"
-  
     - name: Install dependencies for erdpy
       run: |
         sudo apt-get install python3-sphinx
