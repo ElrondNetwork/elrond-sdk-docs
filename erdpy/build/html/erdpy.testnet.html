@@ -42,38 +42,489 @@
 <div class="section" id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="erdpy-testnet-config-module">
-<h2>erdpy.testnet.config module<a class="headerlink" href="#erdpy-testnet-config-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-erdpy.testnet.config">
+<span id="erdpy-testnet-config-module"></span><h2>erdpy.testnet.config module<a class="headerlink" href="#module-erdpy.testnet.config" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="erdpy.testnet.config.Node">
+<em class="property">class </em><code class="descclassname">erdpy.testnet.config.</code><code class="descname">Node</code><span class="sig-paren">(</span><em>index: int</em>, <em>folder: pathlib.Path</em>, <em>shard: str</em>, <em>api_port: int</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.Node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="erdpy.testnet.config.Node.api_address">
+<code class="descname">api_address</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.Node.api_address" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.Node.config_folder">
+<code class="descname">config_folder</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.Node.config_folder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.Node.key_file_path">
+<code class="descname">key_file_path</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.Node.key_file_path" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="erdpy.testnet.config.TestnetConfiguration">
+<em class="property">class </em><code class="descclassname">erdpy.testnet.config.</code><code class="descname">TestnetConfiguration</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="erdpy.testnet.config.TestnetConfiguration.all_nodes_config_folders">
+<code class="descname">all_nodes_config_folders</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.all_nodes_config_folders" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.TestnetConfiguration.all_nodes_folders">
+<code class="descname">all_nodes_folders</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.all_nodes_folders" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.TestnetConfiguration.api_addresses_sharded_for_proxy_config">
+<code class="descname">api_addresses_sharded_for_proxy_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.api_addresses_sharded_for_proxy_config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="erdpy.testnet.config.TestnetConfiguration.default">
+<em class="property">classmethod </em><code class="descname">default</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.default" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="erdpy.testnet.config.TestnetConfiguration.from_default_config">
+<em class="property">classmethod </em><code class="descname">from_default_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.from_default_config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="erdpy.testnet.config.TestnetConfiguration.from_file">
+<em class="property">classmethod </em><code class="descname">from_file</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.from_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>If no filename is specified, try to load testnet.toml from the current
+directory, if there is any, and merge it with the SDK-level testnet
+config. Otherwise, load the SDK-level testnet config. If that one is
+missing as well, generate it from hard-coded defaults.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="erdpy.testnet.config.TestnetConfiguration.from_sdk_testnet_config">
+<em class="property">classmethod </em><code class="descname">from_sdk_testnet_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.from_sdk_testnet_config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.TestnetConfiguration.genesis_time">
+<code class="descname">genesis_time</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.genesis_time" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="erdpy.testnet.config.TestnetConfiguration.get_local_config">
+<em class="property">classmethod </em><code class="descname">get_local_config</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.get_local_config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="erdpy.testnet.config.TestnetConfiguration.get_sdk_testnet_config">
+<em class="property">classmethod </em><code class="descname">get_sdk_testnet_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.get_sdk_testnet_config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.TestnetConfiguration.loglevel">
+<code class="descname">loglevel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.loglevel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.TestnetConfiguration.node_config_source">
+<code class="descname">node_config_source</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.node_config_source" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.TestnetConfiguration.node_source">
+<code class="descname">node_source</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.node_source" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.TestnetConfiguration.num_all_nodes">
+<code class="descname">num_all_nodes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.num_all_nodes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.TestnetConfiguration.num_all_observers">
+<code class="descname">num_all_observers</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.num_all_observers" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.TestnetConfiguration.num_all_validators">
+<code class="descname">num_all_validators</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.num_all_validators" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.TestnetConfiguration.num_observers_per_shard">
+<code class="descname">num_observers_per_shard</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.num_observers_per_shard" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.TestnetConfiguration.num_shards">
+<code class="descname">num_shards</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.num_shards" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.TestnetConfiguration.num_validators_in_metashard">
+<code class="descname">num_validators_in_metashard</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.num_validators_in_metashard" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.TestnetConfiguration.num_validators_per_shard">
+<code class="descname">num_validators_per_shard</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.num_validators_per_shard" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.TestnetConfiguration.observer_addresses">
+<code class="descname">observer_addresses</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.observer_addresses" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.TestnetConfiguration.observer_config_folders">
+<code class="descname">observer_config_folders</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.observer_config_folders" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.TestnetConfiguration.observer_folders">
+<code class="descname">observer_folders</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.observer_folders" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.TestnetConfiguration.observers">
+<code class="descname">observers</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Iterator[erdpy.testnet.config.Node]<a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.observers" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.TestnetConfiguration.proxy_config_folder">
+<code class="descname">proxy_config_folder</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.proxy_config_folder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.TestnetConfiguration.proxy_config_source">
+<code class="descname">proxy_config_source</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.proxy_config_source" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.TestnetConfiguration.proxy_folder">
+<code class="descname">proxy_folder</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.proxy_folder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.TestnetConfiguration.proxy_port">
+<code class="descname">proxy_port</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.proxy_port" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.TestnetConfiguration.proxy_source">
+<code class="descname">proxy_source</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.proxy_source" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.TestnetConfiguration.root">
+<code class="descname">root</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.root" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.TestnetConfiguration.seednode_address">
+<code class="descname">seednode_address</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.seednode_address" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.TestnetConfiguration.seednode_config_folder">
+<code class="descname">seednode_config_folder</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.seednode_config_folder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.TestnetConfiguration.seednode_folder">
+<code class="descname">seednode_folder</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.seednode_folder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.TestnetConfiguration.validator_addresses">
+<code class="descname">validator_addresses</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.validator_addresses" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.TestnetConfiguration.validator_config_folders">
+<code class="descname">validator_config_folders</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.validator_config_folders" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.TestnetConfiguration.validator_folders">
+<code class="descname">validator_folders</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.validator_folders" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.TestnetConfiguration.validator_key_files">
+<code class="descname">validator_key_files</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.validator_key_files" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.testnet.config.TestnetConfiguration.validators">
+<code class="descname">validators</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Iterator[erdpy.testnet.config.Node]<a class="headerlink" href="#erdpy.testnet.config.TestnetConfiguration.validators" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.config.merge_configs">
+<code class="descclassname">erdpy.testnet.config.</code><code class="descname">merge_configs</code><span class="sig-paren">(</span><em>leftcfg: Dict[str, Dict[str, Any]], rightcfg: Dict[str, Dict[str, Any]]</em><span class="sig-paren">)</span> &#x2192; Dict[str, Dict[str, Any]]<a class="headerlink" href="#erdpy.testnet.config.merge_configs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </div>
-<div class="section" id="erdpy-testnet-core-module">
-<h2>erdpy.testnet.core module<a class="headerlink" href="#erdpy-testnet-core-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-erdpy.testnet.core">
+<span id="erdpy-testnet-core-module"></span><h2>erdpy.testnet.core module<a class="headerlink" href="#module-erdpy.testnet.core" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="erdpy.testnet.core.do_start">
+<code class="descclassname">erdpy.testnet.core.</code><code class="descname">do_start</code><span class="sig-paren">(</span><em>args: Any</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.core.do_start" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.core.run">
+<code class="descclassname">erdpy.testnet.core.</code><code class="descname">run</code><span class="sig-paren">(</span><em>args</em>, <em>env=None</em>, <em>cwd: str = None</em>, <em>delay: int = 0</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.core.run" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.core.start">
+<code class="descclassname">erdpy.testnet.core.</code><code class="descname">start</code><span class="sig-paren">(</span><em>args: Any</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.core.start" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </div>
-<div class="section" id="erdpy-testnet-genesis-module">
-<h2>erdpy.testnet.genesis module<a class="headerlink" href="#erdpy-testnet-genesis-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-erdpy.testnet.genesis">
+<span id="erdpy-testnet-genesis-module"></span><h2>erdpy.testnet.genesis module<a class="headerlink" href="#module-erdpy.testnet.genesis" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="erdpy.testnet.genesis.get_delegation_address">
+<code class="descclassname">erdpy.testnet.genesis.</code><code class="descname">get_delegation_address</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; erdpy.accounts.Address<a class="headerlink" href="#erdpy.testnet.genesis.get_delegation_address" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.genesis.get_owner_of_genesis_contracts">
+<code class="descclassname">erdpy.testnet.genesis.</code><code class="descname">get_owner_of_genesis_contracts</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.genesis.get_owner_of_genesis_contracts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.genesis.is_foundational_node">
+<code class="descclassname">erdpy.testnet.genesis.</code><code class="descname">is_foundational_node</code><span class="sig-paren">(</span><em>nickname: str</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#erdpy.testnet.genesis.is_foundational_node" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.genesis.is_last_user">
+<code class="descclassname">erdpy.testnet.genesis.</code><code class="descname">is_last_user</code><span class="sig-paren">(</span><em>nickname: str</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#erdpy.testnet.genesis.is_last_user" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </div>
-<div class="section" id="erdpy-testnet-genesis-json-module">
-<h2>erdpy.testnet.genesis_json module<a class="headerlink" href="#erdpy-testnet-genesis-json-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-erdpy.testnet.genesis_json">
+<span id="erdpy-testnet-genesis-json-module"></span><h2>erdpy.testnet.genesis_json module<a class="headerlink" href="#module-erdpy.testnet.genesis_json" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="erdpy.testnet.genesis_json.build">
+<code class="descclassname">erdpy.testnet.genesis_json.</code><code class="descname">build</code><span class="sig-paren">(</span><em>testnet_config: erdpy.testnet.config.TestnetConfiguration</em><span class="sig-paren">)</span> &#x2192; List[Any]<a class="headerlink" href="#erdpy.testnet.genesis_json.build" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </div>
-<div class="section" id="erdpy-testnet-genesis-smart-contracts-json-module">
-<h2>erdpy.testnet.genesis_smart_contracts_json module<a class="headerlink" href="#erdpy-testnet-genesis-smart-contracts-json-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-erdpy.testnet.genesis_smart_contracts_json">
+<span id="erdpy-testnet-genesis-smart-contracts-json-module"></span><h2>erdpy.testnet.genesis_smart_contracts_json module<a class="headerlink" href="#module-erdpy.testnet.genesis_smart_contracts_json" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="erdpy.testnet.genesis_smart_contracts_json.patch">
+<code class="descclassname">erdpy.testnet.genesis_smart_contracts_json.</code><code class="descname">patch</code><span class="sig-paren">(</span><em>data: Any</em>, <em>testnet_config: erdpy.testnet.config.TestnetConfiguration</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.genesis_smart_contracts_json.patch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </div>
-<div class="section" id="erdpy-testnet-node-config-toml-module">
-<h2>erdpy.testnet.node_config_toml module<a class="headerlink" href="#erdpy-testnet-node-config-toml-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-erdpy.testnet.node_config_toml">
+<span id="erdpy-testnet-node-config-toml-module"></span><h2>erdpy.testnet.node_config_toml module<a class="headerlink" href="#module-erdpy.testnet.node_config_toml" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="erdpy.testnet.node_config_toml.patch">
+<code class="descclassname">erdpy.testnet.node_config_toml.</code><code class="descname">patch</code><span class="sig-paren">(</span><em>data: Any</em>, <em>testnet_config: erdpy.testnet.config.TestnetConfiguration</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.node_config_toml.patch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.node_config_toml.patch_api">
+<code class="descclassname">erdpy.testnet.node_config_toml.</code><code class="descname">patch_api</code><span class="sig-paren">(</span><em>data: Any</em>, <em>testnet_config: erdpy.testnet.config.TestnetConfiguration</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.node_config_toml.patch_api" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.node_config_toml.patch_system_smart_contracts">
+<code class="descclassname">erdpy.testnet.node_config_toml.</code><code class="descname">patch_system_smart_contracts</code><span class="sig-paren">(</span><em>data: Any</em>, <em>testnet_config: erdpy.testnet.config.TestnetConfiguration</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.node_config_toml.patch_system_smart_contracts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </div>
-<div class="section" id="erdpy-testnet-nodes-setup-json-module">
-<h2>erdpy.testnet.nodes_setup_json module<a class="headerlink" href="#erdpy-testnet-nodes-setup-json-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-erdpy.testnet.nodes_setup_json">
+<span id="erdpy-testnet-nodes-setup-json-module"></span><h2>erdpy.testnet.nodes_setup_json module<a class="headerlink" href="#module-erdpy.testnet.nodes_setup_json" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="erdpy.testnet.nodes_setup_json.build">
+<code class="descclassname">erdpy.testnet.nodes_setup_json.</code><code class="descname">build</code><span class="sig-paren">(</span><em>testnet_config: erdpy.testnet.config.TestnetConfiguration</em><span class="sig-paren">)</span> &#x2192; Any<a class="headerlink" href="#erdpy.testnet.nodes_setup_json.build" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </div>
-<div class="section" id="erdpy-testnet-p2p-toml-module">
-<h2>erdpy.testnet.p2p_toml module<a class="headerlink" href="#erdpy-testnet-p2p-toml-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-erdpy.testnet.p2p_toml">
+<span id="erdpy-testnet-p2p-toml-module"></span><h2>erdpy.testnet.p2p_toml module<a class="headerlink" href="#module-erdpy.testnet.p2p_toml" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="erdpy.testnet.p2p_toml.patch">
+<code class="descclassname">erdpy.testnet.p2p_toml.</code><code class="descname">patch</code><span class="sig-paren">(</span><em>data: Any</em>, <em>testnet_config: erdpy.testnet.config.TestnetConfiguration</em>, <em>node_index: int</em>, <em>port_first: int</em><span class="sig-paren">)</span> &#x2192; Any<a class="headerlink" href="#erdpy.testnet.p2p_toml.patch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.p2p_toml.patch_for_seednode">
+<code class="descclassname">erdpy.testnet.p2p_toml.</code><code class="descname">patch_for_seednode</code><span class="sig-paren">(</span><em>data: Any</em>, <em>testnet_config: erdpy.testnet.config.TestnetConfiguration</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.p2p_toml.patch_for_seednode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </div>
-<div class="section" id="erdpy-testnet-setup-module">
-<h2>erdpy.testnet.setup module<a class="headerlink" href="#erdpy-testnet-setup-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-erdpy.testnet.setup">
+<span id="erdpy-testnet-setup-module"></span><h2>erdpy.testnet.setup module<a class="headerlink" href="#module-erdpy.testnet.setup" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="erdpy.testnet.setup.build_binaries">
+<code class="descclassname">erdpy.testnet.setup.</code><code class="descname">build_binaries</code><span class="sig-paren">(</span><em>testnet_config: erdpy.testnet.config.TestnetConfiguration</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.setup.build_binaries" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.setup.clean">
+<code class="descclassname">erdpy.testnet.setup.</code><code class="descname">clean</code><span class="sig-paren">(</span><em>args</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.setup.clean" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.setup.configure">
+<code class="descclassname">erdpy.testnet.setup.</code><code class="descname">configure</code><span class="sig-paren">(</span><em>args</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.setup.configure" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.setup.copy_config_to_nodes">
+<code class="descclassname">erdpy.testnet.setup.</code><code class="descname">copy_config_to_nodes</code><span class="sig-paren">(</span><em>testnet_config: erdpy.testnet.config.TestnetConfiguration</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.setup.copy_config_to_nodes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.setup.copy_config_to_proxy">
+<code class="descclassname">erdpy.testnet.setup.</code><code class="descname">copy_config_to_proxy</code><span class="sig-paren">(</span><em>testnet_config: erdpy.testnet.config.TestnetConfiguration</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.setup.copy_config_to_proxy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.setup.copy_config_to_seednode">
+<code class="descclassname">erdpy.testnet.setup.</code><code class="descname">copy_config_to_seednode</code><span class="sig-paren">(</span><em>testnet_config: erdpy.testnet.config.TestnetConfiguration</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.setup.copy_config_to_seednode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.setup.copy_validator_keys">
+<code class="descclassname">erdpy.testnet.setup.</code><code class="descname">copy_validator_keys</code><span class="sig-paren">(</span><em>testnet_config: erdpy.testnet.config.TestnetConfiguration</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.setup.copy_validator_keys" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.setup.copy_wallets">
+<code class="descclassname">erdpy.testnet.setup.</code><code class="descname">copy_wallets</code><span class="sig-paren">(</span><em>testnet_config: erdpy.testnet.config.TestnetConfiguration</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.setup.copy_wallets" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.setup.create_folders">
+<code class="descclassname">erdpy.testnet.setup.</code><code class="descname">create_folders</code><span class="sig-paren">(</span><em>testnet_config: erdpy.testnet.config.TestnetConfiguration</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.setup.create_folders" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.setup.install_dependencies">
+<code class="descclassname">erdpy.testnet.setup.</code><code class="descname">install_dependencies</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.setup.install_dependencies" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.setup.makefolder">
+<code class="descclassname">erdpy.testnet.setup.</code><code class="descname">makefolder</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.setup.makefolder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.setup.overwrite_genesis_file">
+<code class="descclassname">erdpy.testnet.setup.</code><code class="descname">overwrite_genesis_file</code><span class="sig-paren">(</span><em>testnet_config: erdpy.testnet.config.TestnetConfiguration</em>, <em>nodes_config_folders</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.setup.overwrite_genesis_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.setup.overwrite_nodes_setup">
+<code class="descclassname">erdpy.testnet.setup.</code><code class="descname">overwrite_nodes_setup</code><span class="sig-paren">(</span><em>testnet_config: erdpy.testnet.config.TestnetConfiguration</em>, <em>nodes_config_folders</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.setup.overwrite_nodes_setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.setup.patch_node_config">
+<code class="descclassname">erdpy.testnet.setup.</code><code class="descname">patch_node_config</code><span class="sig-paren">(</span><em>testnet_config: erdpy.testnet.config.TestnetConfiguration</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.setup.patch_node_config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.setup.patch_nodes_p2p_config">
+<code class="descclassname">erdpy.testnet.setup.</code><code class="descname">patch_nodes_p2p_config</code><span class="sig-paren">(</span><em>testnet_config: erdpy.testnet.config.TestnetConfiguration</em>, <em>nodes_config_folders</em>, <em>port_first</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.setup.patch_nodes_p2p_config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.setup.patch_proxy_config">
+<code class="descclassname">erdpy.testnet.setup.</code><code class="descname">patch_proxy_config</code><span class="sig-paren">(</span><em>testnet_config: erdpy.testnet.config.TestnetConfiguration</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.setup.patch_proxy_config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.setup.patch_seednode_p2p_config">
+<code class="descclassname">erdpy.testnet.setup.</code><code class="descname">patch_seednode_p2p_config</code><span class="sig-paren">(</span><em>testnet_config: erdpy.testnet.config.TestnetConfiguration</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.setup.patch_seednode_p2p_config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.setup.patch_source_code">
+<code class="descclassname">erdpy.testnet.setup.</code><code class="descname">patch_source_code</code><span class="sig-paren">(</span><em>testnet_config: erdpy.testnet.config.TestnetConfiguration</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.setup.patch_source_code" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </div>
-<div class="section" id="erdpy-testnet-wallets-module">
-<h2>erdpy.testnet.wallets module<a class="headerlink" href="#erdpy-testnet-wallets-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-erdpy.testnet.wallets">
+<span id="erdpy-testnet-wallets-module"></span><h2>erdpy.testnet.wallets module<a class="headerlink" href="#module-erdpy.testnet.wallets" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="erdpy.testnet.wallets.copy_all_to">
+<code class="descclassname">erdpy.testnet.wallets.</code><code class="descname">copy_all_to</code><span class="sig-paren">(</span><em>destination: str</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.wallets.copy_all_to" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.wallets.copy_validator_key_to">
+<code class="descclassname">erdpy.testnet.wallets.</code><code class="descname">copy_validator_key_to</code><span class="sig-paren">(</span><em>validator_index: int</em>, <em>destination: str</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.wallets.copy_validator_key_to" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.wallets.get_observer_key_file">
+<code class="descclassname">erdpy.testnet.wallets.</code><code class="descname">get_observer_key_file</code><span class="sig-paren">(</span><em>observer_index: int</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.wallets.get_observer_key_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.wallets.get_users">
+<code class="descclassname">erdpy.testnet.wallets.</code><code class="descname">get_users</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Dict[str, erdpy.accounts.Account]<a class="headerlink" href="#erdpy.testnet.wallets.get_users" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.wallets.get_validator_key_file">
+<code class="descclassname">erdpy.testnet.wallets.</code><code class="descname">get_validator_key_file</code><span class="sig-paren">(</span><em>validator_index: int</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.wallets.get_validator_key_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.wallets.get_validator_wallet_file">
+<code class="descclassname">erdpy.testnet.wallets.</code><code class="descname">get_validator_wallet_file</code><span class="sig-paren">(</span><em>validator_index: int</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.wallets.get_validator_wallet_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.wallets.get_validator_wallets">
+<code class="descclassname">erdpy.testnet.wallets.</code><code class="descname">get_validator_wallets</code><span class="sig-paren">(</span><em>num_validators: int</em><span class="sig-paren">)</span> &#x2192; Dict[str, erdpy.accounts.Account]<a class="headerlink" href="#erdpy.testnet.wallets.get_validator_wallets" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.wallets.get_validators">
+<code class="descclassname">erdpy.testnet.wallets.</code><code class="descname">get_validators</code><span class="sig-paren">(</span><em>num_validators: int</em><span class="sig-paren">)</span> &#x2192; Dict[str, Tuple[str, erdpy.accounts.Account]]<a class="headerlink" href="#erdpy.testnet.wallets.get_validators" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </div>
-<div class="section" id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-erdpy.testnet">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-erdpy.testnet" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="erdpy.testnet.install_dependencies">
+<code class="descclassname">erdpy.testnet.</code><code class="descname">install_dependencies</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.install_dependencies" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.configure">
+<code class="descclassname">erdpy.testnet.</code><code class="descname">configure</code><span class="sig-paren">(</span><em>args</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.configure" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.clean">
+<code class="descclassname">erdpy.testnet.</code><code class="descname">clean</code><span class="sig-paren">(</span><em>args</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.clean" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.testnet.start">
+<code class="descclassname">erdpy.testnet.</code><code class="descname">start</code><span class="sig-paren">(</span><em>args: Any</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.testnet.start" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </div>
 </div>
 
@@ -87,17 +538,17 @@
   <ul>
 <li><a class="reference internal" href="#">erdpy.testnet package</a><ul>
 <li><a class="reference internal" href="#submodules">Submodules</a></li>
-<li><a class="reference internal" href="#erdpy-testnet-config-module">erdpy.testnet.config module</a></li>
-<li><a class="reference internal" href="#erdpy-testnet-core-module">erdpy.testnet.core module</a></li>
-<li><a class="reference internal" href="#erdpy-testnet-genesis-module">erdpy.testnet.genesis module</a></li>
-<li><a class="reference internal" href="#erdpy-testnet-genesis-json-module">erdpy.testnet.genesis_json module</a></li>
-<li><a class="reference internal" href="#erdpy-testnet-genesis-smart-contracts-json-module">erdpy.testnet.genesis_smart_contracts_json module</a></li>
-<li><a class="reference internal" href="#erdpy-testnet-node-config-toml-module">erdpy.testnet.node_config_toml module</a></li>
-<li><a class="reference internal" href="#erdpy-testnet-nodes-setup-json-module">erdpy.testnet.nodes_setup_json module</a></li>
-<li><a class="reference internal" href="#erdpy-testnet-p2p-toml-module">erdpy.testnet.p2p_toml module</a></li>
-<li><a class="reference internal" href="#erdpy-testnet-setup-module">erdpy.testnet.setup module</a></li>
-<li><a class="reference internal" href="#erdpy-testnet-wallets-module">erdpy.testnet.wallets module</a></li>
-<li><a class="reference internal" href="#module-contents">Module contents</a></li>
+<li><a class="reference internal" href="#module-erdpy.testnet.config">erdpy.testnet.config module</a></li>
+<li><a class="reference internal" href="#module-erdpy.testnet.core">erdpy.testnet.core module</a></li>
+<li><a class="reference internal" href="#module-erdpy.testnet.genesis">erdpy.testnet.genesis module</a></li>
+<li><a class="reference internal" href="#module-erdpy.testnet.genesis_json">erdpy.testnet.genesis_json module</a></li>
+<li><a class="reference internal" href="#module-erdpy.testnet.genesis_smart_contracts_json">erdpy.testnet.genesis_smart_contracts_json module</a></li>
+<li><a class="reference internal" href="#module-erdpy.testnet.node_config_toml">erdpy.testnet.node_config_toml module</a></li>
+<li><a class="reference internal" href="#module-erdpy.testnet.nodes_setup_json">erdpy.testnet.nodes_setup_json module</a></li>
+<li><a class="reference internal" href="#module-erdpy.testnet.p2p_toml">erdpy.testnet.p2p_toml module</a></li>
+<li><a class="reference internal" href="#module-erdpy.testnet.setup">erdpy.testnet.setup module</a></li>
+<li><a class="reference internal" href="#module-erdpy.testnet.wallets">erdpy.testnet.wallets module</a></li>
+<li><a class="reference internal" href="#module-erdpy.testnet">Module contents</a></li>
 </ul>
 </li>
 </ul>

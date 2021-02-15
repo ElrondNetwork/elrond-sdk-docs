@@ -42,14 +42,181 @@
 <div class="section" id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="erdpy-dependencies-install-module">
-<h2>erdpy.dependencies.install module<a class="headerlink" href="#erdpy-dependencies-install-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-erdpy.dependencies.install">
+<span id="erdpy-dependencies-install-module"></span><h2>erdpy.dependencies.install module<a class="headerlink" href="#module-erdpy.dependencies.install" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="erdpy.dependencies.install.get_all_deps">
+<code class="descclassname">erdpy.dependencies.install.</code><code class="descname">get_all_deps</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; List[erdpy.dependencies.modules.DependencyModule]<a class="headerlink" href="#erdpy.dependencies.install.get_all_deps" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.dependencies.install.get_deps_dict">
+<code class="descclassname">erdpy.dependencies.install.</code><code class="descname">get_deps_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Dict[str, erdpy.dependencies.modules.DependencyModule]<a class="headerlink" href="#erdpy.dependencies.install.get_deps_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.dependencies.install.get_module_by_key">
+<code class="descclassname">erdpy.dependencies.install.</code><code class="descname">get_module_by_key</code><span class="sig-paren">(</span><em>key: str</em><span class="sig-paren">)</span> &#x2192; erdpy.dependencies.modules.DependencyModule<a class="headerlink" href="#erdpy.dependencies.install.get_module_by_key" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.dependencies.install.get_module_directory">
+<code class="descclassname">erdpy.dependencies.install.</code><code class="descname">get_module_directory</code><span class="sig-paren">(</span><em>key: str</em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#erdpy.dependencies.install.get_module_directory" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.dependencies.install.install_module">
+<code class="descclassname">erdpy.dependencies.install.</code><code class="descname">install_module</code><span class="sig-paren">(</span><em>key: str</em>, <em>tag: str = ''</em>, <em>overwrite: bool = False</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.dependencies.install.install_module" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </div>
-<div class="section" id="erdpy-dependencies-modules-module">
-<h2>erdpy.dependencies.modules module<a class="headerlink" href="#erdpy-dependencies-modules-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-erdpy.dependencies.modules">
+<span id="erdpy-dependencies-modules-module"></span><h2>erdpy.dependencies.modules module<a class="headerlink" href="#module-erdpy.dependencies.modules" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="erdpy.dependencies.modules.ArwenToolsModule">
+<em class="property">class </em><code class="descclassname">erdpy.dependencies.modules.</code><code class="descname">ArwenToolsModule</code><span class="sig-paren">(</span><em>key: str</em>, <em>aliases: List[str] = None</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.dependencies.modules.ArwenToolsModule" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#erdpy.dependencies.modules.StandaloneModule" title="erdpy.dependencies.modules.StandaloneModule"><code class="xref py py-class docutils literal notranslate"><span class="pre">erdpy.dependencies.modules.StandaloneModule</span></code></a></p>
+<dl class="method">
+<dt id="erdpy.dependencies.modules.ArwenToolsModule.get_env">
+<code class="descname">get_env</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.dependencies.modules.ArwenToolsModule.get_env" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="erdpy.dependencies.modules.DependencyModule">
+<em class="property">class </em><code class="descclassname">erdpy.dependencies.modules.</code><code class="descname">DependencyModule</code><span class="sig-paren">(</span><em>key: str, aliases: List[str]</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.dependencies.modules.DependencyModule" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="erdpy.dependencies.modules.DependencyModule.get_directory">
+<code class="descname">get_directory</code><span class="sig-paren">(</span><em>tag: str</em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#erdpy.dependencies.modules.DependencyModule.get_directory" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.dependencies.modules.DependencyModule.get_env">
+<code class="descname">get_env</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Dict[str, str]<a class="headerlink" href="#erdpy.dependencies.modules.DependencyModule.get_env" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.dependencies.modules.DependencyModule.install">
+<code class="descname">install</code><span class="sig-paren">(</span><em>tag: str</em>, <em>overwrite: bool</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#erdpy.dependencies.modules.DependencyModule.install" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.dependencies.modules.DependencyModule.is_installed">
+<code class="descname">is_installed</code><span class="sig-paren">(</span><em>tag: str</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#erdpy.dependencies.modules.DependencyModule.is_installed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.dependencies.modules.DependencyModule.uninstall">
+<code class="descname">uninstall</code><span class="sig-paren">(</span><em>tag: str</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#erdpy.dependencies.modules.DependencyModule.uninstall" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="erdpy.dependencies.modules.GolangModule">
+<em class="property">class </em><code class="descclassname">erdpy.dependencies.modules.</code><code class="descname">GolangModule</code><span class="sig-paren">(</span><em>key: str</em>, <em>aliases: List[str] = None</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.dependencies.modules.GolangModule" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#erdpy.dependencies.modules.StandaloneModule" title="erdpy.dependencies.modules.StandaloneModule"><code class="xref py py-class docutils literal notranslate"><span class="pre">erdpy.dependencies.modules.StandaloneModule</span></code></a></p>
+<dl class="method">
+<dt id="erdpy.dependencies.modules.GolangModule.get_env">
+<code class="descname">get_env</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.dependencies.modules.GolangModule.get_env" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.dependencies.modules.GolangModule.get_gopath">
+<code class="descname">get_gopath</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.dependencies.modules.GolangModule.get_gopath" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="erdpy.dependencies.modules.MclSignerModule">
+<em class="property">class </em><code class="descclassname">erdpy.dependencies.modules.</code><code class="descname">MclSignerModule</code><span class="sig-paren">(</span><em>key: str</em>, <em>aliases: List[str] = None</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.dependencies.modules.MclSignerModule" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#erdpy.dependencies.modules.StandaloneModule" title="erdpy.dependencies.modules.StandaloneModule"><code class="xref py py-class docutils literal notranslate"><span class="pre">erdpy.dependencies.modules.StandaloneModule</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="erdpy.dependencies.modules.NodejsModule">
+<em class="property">class </em><code class="descclassname">erdpy.dependencies.modules.</code><code class="descname">NodejsModule</code><span class="sig-paren">(</span><em>key: str, aliases: List[str]</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.dependencies.modules.NodejsModule" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#erdpy.dependencies.modules.StandaloneModule" title="erdpy.dependencies.modules.StandaloneModule"><code class="xref py py-class docutils literal notranslate"><span class="pre">erdpy.dependencies.modules.StandaloneModule</span></code></a></p>
+<dl class="method">
+<dt id="erdpy.dependencies.modules.NodejsModule.get_env">
+<code class="descname">get_env</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.dependencies.modules.NodejsModule.get_env" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="erdpy.dependencies.modules.Rust">
+<em class="property">class </em><code class="descclassname">erdpy.dependencies.modules.</code><code class="descname">Rust</code><span class="sig-paren">(</span><em>key: str</em>, <em>aliases: List[str] = None</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.dependencies.modules.Rust" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#erdpy.dependencies.modules.DependencyModule" title="erdpy.dependencies.modules.DependencyModule"><code class="xref py py-class docutils literal notranslate"><span class="pre">erdpy.dependencies.modules.DependencyModule</span></code></a></p>
+<dl class="method">
+<dt id="erdpy.dependencies.modules.Rust.get_directory">
+<code class="descname">get_directory</code><span class="sig-paren">(</span><em>tag: str</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.dependencies.modules.Rust.get_directory" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.dependencies.modules.Rust.get_env">
+<code class="descname">get_env</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.dependencies.modules.Rust.get_env" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.dependencies.modules.Rust.is_installed">
+<code class="descname">is_installed</code><span class="sig-paren">(</span><em>tag: str</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.dependencies.modules.Rust.is_installed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.dependencies.modules.Rust.uninstall">
+<code class="descname">uninstall</code><span class="sig-paren">(</span><em>tag: str</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.dependencies.modules.Rust.uninstall" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="erdpy.dependencies.modules.StandaloneModule">
+<em class="property">class </em><code class="descclassname">erdpy.dependencies.modules.</code><code class="descname">StandaloneModule</code><span class="sig-paren">(</span><em>key: str</em>, <em>aliases: List[str] = None</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.dependencies.modules.StandaloneModule" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#erdpy.dependencies.modules.DependencyModule" title="erdpy.dependencies.modules.DependencyModule"><code class="xref py py-class docutils literal notranslate"><span class="pre">erdpy.dependencies.modules.DependencyModule</span></code></a></p>
+<dl class="method">
+<dt id="erdpy.dependencies.modules.StandaloneModule.get_directory">
+<code class="descname">get_directory</code><span class="sig-paren">(</span><em>tag: str</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.dependencies.modules.StandaloneModule.get_directory" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.dependencies.modules.StandaloneModule.get_parent_directory">
+<code class="descname">get_parent_directory</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.dependencies.modules.StandaloneModule.get_parent_directory" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.dependencies.modules.StandaloneModule.is_installed">
+<code class="descname">is_installed</code><span class="sig-paren">(</span><em>tag: str</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.dependencies.modules.StandaloneModule.is_installed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.dependencies.modules.StandaloneModule.uninstall">
+<code class="descname">uninstall</code><span class="sig-paren">(</span><em>tag: str</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.dependencies.modules.StandaloneModule.uninstall" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </div>
-<div class="section" id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-erdpy.dependencies">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-erdpy.dependencies" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="erdpy.dependencies.install_module">
+<code class="descclassname">erdpy.dependencies.</code><code class="descname">install_module</code><span class="sig-paren">(</span><em>key: str</em>, <em>tag: str = ''</em>, <em>overwrite: bool = False</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.dependencies.install_module" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.dependencies.get_module_directory">
+<code class="descclassname">erdpy.dependencies.</code><code class="descname">get_module_directory</code><span class="sig-paren">(</span><em>key: str</em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#erdpy.dependencies.get_module_directory" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.dependencies.get_module_by_key">
+<code class="descclassname">erdpy.dependencies.</code><code class="descname">get_module_by_key</code><span class="sig-paren">(</span><em>key: str</em><span class="sig-paren">)</span> &#x2192; erdpy.dependencies.modules.DependencyModule<a class="headerlink" href="#erdpy.dependencies.get_module_by_key" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </div>
 </div>
 
@@ -63,9 +230,9 @@
   <ul>
 <li><a class="reference internal" href="#">erdpy.dependencies package</a><ul>
 <li><a class="reference internal" href="#submodules">Submodules</a></li>
-<li><a class="reference internal" href="#erdpy-dependencies-install-module">erdpy.dependencies.install module</a></li>
-<li><a class="reference internal" href="#erdpy-dependencies-modules-module">erdpy.dependencies.modules module</a></li>
-<li><a class="reference internal" href="#module-contents">Module contents</a></li>
+<li><a class="reference internal" href="#module-erdpy.dependencies.install">erdpy.dependencies.install module</a></li>
+<li><a class="reference internal" href="#module-erdpy.dependencies.modules">erdpy.dependencies.modules module</a></li>
+<li><a class="reference internal" href="#module-erdpy.dependencies">Module contents</a></li>
 </ul>
 </li>
 </ul>

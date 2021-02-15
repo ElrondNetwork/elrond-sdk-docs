@@ -42,23 +42,270 @@
 <div class="section" id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="erdpy-proxy-core-module">
-<h2>erdpy.proxy.core module<a class="headerlink" href="#erdpy-proxy-core-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-erdpy.proxy.core">
+<span id="erdpy-proxy-core-module"></span><h2>erdpy.proxy.core module<a class="headerlink" href="#module-erdpy.proxy.core" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="erdpy.proxy.core.ElrondProxy">
+<em class="property">class </em><code class="descclassname">erdpy.proxy.core.</code><code class="descname">ElrondProxy</code><span class="sig-paren">(</span><em>url: str</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.proxy.core.ElrondProxy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="erdpy.proxy.core.ElrondProxy.get_account">
+<code class="descname">get_account</code><span class="sig-paren">(</span><em>address: erdpy.accounts.Address</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.proxy.core.ElrondProxy.get_account" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.proxy.core.ElrondProxy.get_account_balance">
+<code class="descname">get_account_balance</code><span class="sig-paren">(</span><em>address: erdpy.accounts.Address</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.proxy.core.ElrondProxy.get_account_balance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.proxy.core.ElrondProxy.get_account_nonce">
+<code class="descname">get_account_nonce</code><span class="sig-paren">(</span><em>address: erdpy.accounts.Address</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#erdpy.proxy.core.ElrondProxy.get_account_nonce" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.proxy.core.ElrondProxy.get_account_transactions">
+<code class="descname">get_account_transactions</code><span class="sig-paren">(</span><em>address: erdpy.accounts.Address</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.proxy.core.ElrondProxy.get_account_transactions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.proxy.core.ElrondProxy.get_chain_id">
+<code class="descname">get_chain_id</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.proxy.core.ElrondProxy.get_chain_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.proxy.core.ElrondProxy.get_gas_price">
+<code class="descname">get_gas_price</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.proxy.core.ElrondProxy.get_gas_price" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.proxy.core.ElrondProxy.get_hyperblock">
+<code class="descname">get_hyperblock</code><span class="sig-paren">(</span><em>key</em><span class="sig-paren">)</span> &#x2192; Any<a class="headerlink" href="#erdpy.proxy.core.ElrondProxy.get_hyperblock" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.proxy.core.ElrondProxy.get_last_block_nonce">
+<code class="descname">get_last_block_nonce</code><span class="sig-paren">(</span><em>shard_id</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.proxy.core.ElrondProxy.get_last_block_nonce" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.proxy.core.ElrondProxy.get_network_config">
+<code class="descname">get_network_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; erdpy.proxy.messages.NetworkConfig<a class="headerlink" href="#erdpy.proxy.core.ElrondProxy.get_network_config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.proxy.core.ElrondProxy.get_num_shards">
+<code class="descname">get_num_shards</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.proxy.core.ElrondProxy.get_num_shards" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.proxy.core.ElrondProxy.get_transaction">
+<code class="descname">get_transaction</code><span class="sig-paren">(</span><em>tx_hash: str</em>, <em>sender_address: str = ''</em>, <em>with_results: bool = False</em><span class="sig-paren">)</span> &#x2192; Any<a class="headerlink" href="#erdpy.proxy.core.ElrondProxy.get_transaction" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.proxy.core.ElrondProxy.query_contract">
+<code class="descname">query_contract</code><span class="sig-paren">(</span><em>payload: Any</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.proxy.core.ElrondProxy.query_contract" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.proxy.core.ElrondProxy.send_transaction">
+<code class="descname">send_transaction</code><span class="sig-paren">(</span><em>payload: Any</em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#erdpy.proxy.core.ElrondProxy.send_transaction" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.proxy.core.ElrondProxy.send_transactions">
+<code class="descname">send_transactions</code><span class="sig-paren">(</span><em>payload: List[Any]</em><span class="sig-paren">)</span> &#x2192; Tuple[int, List[str]]<a class="headerlink" href="#erdpy.proxy.core.ElrondProxy.send_transactions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.proxy.core.ElrondProxy.simulate_transaction">
+<code class="descname">simulate_transaction</code><span class="sig-paren">(</span><em>payload: Any</em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#erdpy.proxy.core.ElrondProxy.simulate_transaction" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </div>
-<div class="section" id="erdpy-proxy-cost-module">
-<h2>erdpy.proxy.cost module<a class="headerlink" href="#erdpy-proxy-cost-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-erdpy.proxy.cost">
+<span id="erdpy-proxy-cost-module"></span><h2>erdpy.proxy.cost module<a class="headerlink" href="#module-erdpy.proxy.cost" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="erdpy.proxy.cost.TransactionCostEstimator">
+<em class="property">class </em><code class="descclassname">erdpy.proxy.cost.</code><code class="descname">TransactionCostEstimator</code><span class="sig-paren">(</span><em>proxy_url</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.proxy.cost.TransactionCostEstimator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="erdpy.proxy.cost.TransactionCostEstimator.estimate_tx_cost">
+<code class="descname">estimate_tx_cost</code><span class="sig-paren">(</span><em>arguments</em>, <em>tx_type</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.proxy.cost.TransactionCostEstimator.estimate_tx_cost" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </div>
-<div class="section" id="erdpy-proxy-http-facade-module">
-<h2>erdpy.proxy.http_facade module<a class="headerlink" href="#erdpy-proxy-http-facade-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-erdpy.proxy.http_facade">
+<span id="erdpy-proxy-http-facade-module"></span><h2>erdpy.proxy.http_facade module<a class="headerlink" href="#module-erdpy.proxy.http_facade" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="erdpy.proxy.http_facade.do_get">
+<code class="descclassname">erdpy.proxy.http_facade.</code><code class="descname">do_get</code><span class="sig-paren">(</span><em>url</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.proxy.http_facade.do_get" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.proxy.http_facade.do_post">
+<code class="descclassname">erdpy.proxy.http_facade.</code><code class="descname">do_post</code><span class="sig-paren">(</span><em>url</em>, <em>payload</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.proxy.http_facade.do_post" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="erdpy.proxy.http_facade.get_data">
+<code class="descclassname">erdpy.proxy.http_facade.</code><code class="descname">get_data</code><span class="sig-paren">(</span><em>parsed</em>, <em>url</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.proxy.http_facade.get_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </div>
-<div class="section" id="erdpy-proxy-messages-module">
-<h2>erdpy.proxy.messages module<a class="headerlink" href="#erdpy-proxy-messages-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-erdpy.proxy.messages">
+<span id="erdpy-proxy-messages-module"></span><h2>erdpy.proxy.messages module<a class="headerlink" href="#module-erdpy.proxy.messages" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="erdpy.proxy.messages.NetworkConfig">
+<em class="property">class </em><code class="descclassname">erdpy.proxy.messages.</code><code class="descname">NetworkConfig</code><span class="sig-paren">(</span><em>data: Dict[str, Any]</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.proxy.messages.NetworkConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
 </div>
-<div class="section" id="erdpy-proxy-tx-types-module">
-<h2>erdpy.proxy.tx_types module<a class="headerlink" href="#erdpy-proxy-tx-types-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-erdpy.proxy.tx_types">
+<span id="erdpy-proxy-tx-types-module"></span><h2>erdpy.proxy.tx_types module<a class="headerlink" href="#module-erdpy.proxy.tx_types" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="erdpy.proxy.tx_types.TxTypes">
+<em class="property">class </em><code class="descclassname">erdpy.proxy.tx_types.</code><code class="descname">TxTypes</code><a class="headerlink" href="#erdpy.proxy.tx_types.TxTypes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="erdpy.proxy.tx_types.TxTypes.MOVE_BALANCE">
+<code class="descname">MOVE_BALANCE</code><em class="property"> = 'move-balance'</em><a class="headerlink" href="#erdpy.proxy.tx_types.TxTypes.MOVE_BALANCE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="erdpy.proxy.tx_types.TxTypes.SC_CALL">
+<code class="descname">SC_CALL</code><em class="property"> = 'sc-call'</em><a class="headerlink" href="#erdpy.proxy.tx_types.TxTypes.SC_CALL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="erdpy.proxy.tx_types.TxTypes.SC_DEPLOY">
+<code class="descname">SC_DEPLOY</code><em class="property"> = 'sc-deploy'</em><a class="headerlink" href="#erdpy.proxy.tx_types.TxTypes.SC_DEPLOY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </div>
-<div class="section" id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-erdpy.proxy">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-erdpy.proxy" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="erdpy.proxy.ElrondProxy">
+<em class="property">class </em><code class="descclassname">erdpy.proxy.</code><code class="descname">ElrondProxy</code><span class="sig-paren">(</span><em>url: str</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.proxy.ElrondProxy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="erdpy.proxy.ElrondProxy.get_account">
+<code class="descname">get_account</code><span class="sig-paren">(</span><em>address: erdpy.accounts.Address</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.proxy.ElrondProxy.get_account" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.proxy.ElrondProxy.get_account_balance">
+<code class="descname">get_account_balance</code><span class="sig-paren">(</span><em>address: erdpy.accounts.Address</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.proxy.ElrondProxy.get_account_balance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.proxy.ElrondProxy.get_account_nonce">
+<code class="descname">get_account_nonce</code><span class="sig-paren">(</span><em>address: erdpy.accounts.Address</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#erdpy.proxy.ElrondProxy.get_account_nonce" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.proxy.ElrondProxy.get_account_transactions">
+<code class="descname">get_account_transactions</code><span class="sig-paren">(</span><em>address: erdpy.accounts.Address</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.proxy.ElrondProxy.get_account_transactions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.proxy.ElrondProxy.get_chain_id">
+<code class="descname">get_chain_id</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.proxy.ElrondProxy.get_chain_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.proxy.ElrondProxy.get_gas_price">
+<code class="descname">get_gas_price</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.proxy.ElrondProxy.get_gas_price" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.proxy.ElrondProxy.get_hyperblock">
+<code class="descname">get_hyperblock</code><span class="sig-paren">(</span><em>key</em><span class="sig-paren">)</span> &#x2192; Any<a class="headerlink" href="#erdpy.proxy.ElrondProxy.get_hyperblock" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.proxy.ElrondProxy.get_last_block_nonce">
+<code class="descname">get_last_block_nonce</code><span class="sig-paren">(</span><em>shard_id</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.proxy.ElrondProxy.get_last_block_nonce" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.proxy.ElrondProxy.get_network_config">
+<code class="descname">get_network_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; erdpy.proxy.messages.NetworkConfig<a class="headerlink" href="#erdpy.proxy.ElrondProxy.get_network_config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.proxy.ElrondProxy.get_num_shards">
+<code class="descname">get_num_shards</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.proxy.ElrondProxy.get_num_shards" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.proxy.ElrondProxy.get_transaction">
+<code class="descname">get_transaction</code><span class="sig-paren">(</span><em>tx_hash: str</em>, <em>sender_address: str = ''</em>, <em>with_results: bool = False</em><span class="sig-paren">)</span> &#x2192; Any<a class="headerlink" href="#erdpy.proxy.ElrondProxy.get_transaction" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.proxy.ElrondProxy.query_contract">
+<code class="descname">query_contract</code><span class="sig-paren">(</span><em>payload: Any</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.proxy.ElrondProxy.query_contract" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.proxy.ElrondProxy.send_transaction">
+<code class="descname">send_transaction</code><span class="sig-paren">(</span><em>payload: Any</em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#erdpy.proxy.ElrondProxy.send_transaction" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.proxy.ElrondProxy.send_transactions">
+<code class="descname">send_transactions</code><span class="sig-paren">(</span><em>payload: List[Any]</em><span class="sig-paren">)</span> &#x2192; Tuple[int, List[str]]<a class="headerlink" href="#erdpy.proxy.ElrondProxy.send_transactions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="erdpy.proxy.ElrondProxy.simulate_transaction">
+<code class="descname">simulate_transaction</code><span class="sig-paren">(</span><em>payload: Any</em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#erdpy.proxy.ElrondProxy.simulate_transaction" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="erdpy.proxy.TransactionCostEstimator">
+<em class="property">class </em><code class="descclassname">erdpy.proxy.</code><code class="descname">TransactionCostEstimator</code><span class="sig-paren">(</span><em>proxy_url</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.proxy.TransactionCostEstimator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="erdpy.proxy.TransactionCostEstimator.estimate_tx_cost">
+<code class="descname">estimate_tx_cost</code><span class="sig-paren">(</span><em>arguments</em>, <em>tx_type</em><span class="sig-paren">)</span><a class="headerlink" href="#erdpy.proxy.TransactionCostEstimator.estimate_tx_cost" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="erdpy.proxy.TxTypes">
+<em class="property">class </em><code class="descclassname">erdpy.proxy.</code><code class="descname">TxTypes</code><a class="headerlink" href="#erdpy.proxy.TxTypes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="erdpy.proxy.TxTypes.MOVE_BALANCE">
+<code class="descname">MOVE_BALANCE</code><em class="property"> = 'move-balance'</em><a class="headerlink" href="#erdpy.proxy.TxTypes.MOVE_BALANCE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="erdpy.proxy.TxTypes.SC_CALL">
+<code class="descname">SC_CALL</code><em class="property"> = 'sc-call'</em><a class="headerlink" href="#erdpy.proxy.TxTypes.SC_CALL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="erdpy.proxy.TxTypes.SC_DEPLOY">
+<code class="descname">SC_DEPLOY</code><em class="property"> = 'sc-deploy'</em><a class="headerlink" href="#erdpy.proxy.TxTypes.SC_DEPLOY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </div>
 </div>
 
@@ -72,12 +319,12 @@
   <ul>
 <li><a class="reference internal" href="#">erdpy.proxy package</a><ul>
 <li><a class="reference internal" href="#submodules">Submodules</a></li>
-<li><a class="reference internal" href="#erdpy-proxy-core-module">erdpy.proxy.core module</a></li>
-<li><a class="reference internal" href="#erdpy-proxy-cost-module">erdpy.proxy.cost module</a></li>
-<li><a class="reference internal" href="#erdpy-proxy-http-facade-module">erdpy.proxy.http_facade module</a></li>
-<li><a class="reference internal" href="#erdpy-proxy-messages-module">erdpy.proxy.messages module</a></li>
-<li><a class="reference internal" href="#erdpy-proxy-tx-types-module">erdpy.proxy.tx_types module</a></li>
-<li><a class="reference internal" href="#module-contents">Module contents</a></li>
+<li><a class="reference internal" href="#module-erdpy.proxy.core">erdpy.proxy.core module</a></li>
+<li><a class="reference internal" href="#module-erdpy.proxy.cost">erdpy.proxy.cost module</a></li>
+<li><a class="reference internal" href="#module-erdpy.proxy.http_facade">erdpy.proxy.http_facade module</a></li>
+<li><a class="reference internal" href="#module-erdpy.proxy.messages">erdpy.proxy.messages module</a></li>
+<li><a class="reference internal" href="#module-erdpy.proxy.tx_types">erdpy.proxy.tx_types module</a></li>
+<li><a class="reference internal" href="#module-erdpy.proxy">Module contents</a></li>
 </ul>
 </li>
 </ul>
