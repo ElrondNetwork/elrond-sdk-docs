@@ -47,5 +47,5 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "github-actions[bot]"
         git add -A
-        git commit -m "Test commit"
+        git commit -m "Update erdpy"
         git push origin
